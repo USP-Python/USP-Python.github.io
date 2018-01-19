@@ -21,6 +21,7 @@ def average(list):
     result = sum / len(list)
     return result
 ```
+Now, try writing a function that will find you the largest value in a list. 
 
 Another useful data structure is called a dictionary.
 
@@ -39,6 +40,27 @@ We can also add an entry to the dictionary as such:
 ```python
 dic[d] = 4
 ```
+We can also convert a dictionary into a list as such:
+
+```python
+dic = {a : 1, b : 2, c : 3}
+items = dic.items()
+#items = [(a,1), (b,2), (c,3)]
+```
+After using .items(), we have converted the dictionary into a list containing each entry in a tuple. A tuple using round brackets, and is like a list except that the values in the tuple cannot be changed. 
+This is useful if we want to loop through a dictionary, for example to find a particular key. Let's write a function that will take a dictionary, and give us a list of all the keys that have integer values that are greater than 3. 
+
+```python
+def findkeys(dic):
+    dic = dic.items()
+    result = []
+    for x in dic:
+        if x[1] > 3:
+            result = result + [x[0]]
+    return result
+```
+
+Let's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing that function yourself!
 
 ```python
 meals = {
