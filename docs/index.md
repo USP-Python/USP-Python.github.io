@@ -7,7 +7,7 @@ Instructions for Windows and macOS operating systems follow[^3]. If you run into
 
 ## Windows
 
-1. Download and install python3
+1. Download and install python3 at https://www.python.org/downloads/release/python-364/. Choose Windows x86-64 executable installer, and just follow the instructions to install. 
 2. Download and install python-telegram-bot
 
 ## macOS
