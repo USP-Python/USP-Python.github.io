@@ -1,3 +1,26 @@
+A data structure is something we use to store values. A list is an important in-built data structure in python, which we represent using square brackets:
+
+```python
+list = [1,2,3,4,5]
+```
+
+We can access the contents of a list using indices, just like we did for strings. We can also find the length of the list using len. 
+
+```python
+list = [1,2,3,4,5]
+number = list[3] #number = 4
+length = len(list) #length = 5
+```
+Let's now try writing a function to find the average of the values in a list.
+
+```python
+def average(list):
+    sum = 0
+    for x in list:
+        sum = sum + x
+    result = sum / len(list)
+    return result
+```
 
 Another useful data structure is called a dictionary.
 
