@@ -8,7 +8,7 @@ A dictionary contains entries which are key-value pairs. In the example above, a
 
 ```python
 dic = {a : 1, b : 2, c : 3}
-number = dic[b] //number == 2
+number = dic[b] #number == 2
 ```
 
 We can also add an entry to the dictionary as such:
