@@ -1,0 +1,20 @@
+site_name: Intro to Python with Telgeram Bots
+theme:
+    name: 'material'
+markdown_extensions:
+    - footnotes
+pages:
+    - Set-Up: index.md
+    - Basics:
+        - 1. Data types, operations, variables: 01-basics.md
+        - 2. Control flow: 02-basics.md
+        - 3. Loops: 03-basics.md
+        - 4. Functions: 04-basics.md
+        - 5. Data structures: 05-basics.md
+    - Bot:
+        - 6. Installing packages: 06-bot.md
+        - 7. Sending messages: 07-bot.md
+        - 8. Reacting to messages: 08-bot.md
+        - 9. Sending commands: 09-bot.md
+    - Bonus:
+        - 10. How to Google: 10-bonus.md
