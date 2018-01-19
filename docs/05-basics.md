@@ -2,12 +2,20 @@
 Another useful data structure is called a dictionary.
 
 ```python
-dictionary = {a : 1, b : 2, c :3}
+dictionary = {a : 1, b : 2, c : 3}
+```
+A dictionary contains entries which are key-value pairs. In the example above, a : 1 is a key-value pair where a is the key and 1 is the value. Just like in a normal dictionary, we can lookup a dictionary to retrieve the corresponding value of a key as such:
+
+```python
+dic = {a : 1, b : 2, c : 3}
+number = dic[b] //number == 2
 ```
 
-A dictionary contains entries which are key-value pairs. In the example above, a : 1 is a key-value pair where a is the key and 1 is the value. 
+We can also add an entry to the dictionary as such:
 
-
+```python
+dic[d] = 4
+```
 
 ```python
 meals = {
