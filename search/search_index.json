@@ -1,0 +1,74 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Set-Up\n\n\nWelcome to an \nIntroduction to Python with Telegram Bots\n. To begin, we must first set up the \npython programming language\n and the \npython-telegram-bot library\n. \nPlease complete these installation before the workshop.\n\n\nInstructions for Windows and macOS operating systems follow\n1\n. If you run into any problems, you may contact through telegram:\n\n\n\n\n@ningyuan\n\n\n\n\nWindows\n\n\n\n\nDownload and install python3\n\n\nDownload and install python-telegram-bot\n\n\n\n\nmacOS\n\n\n\n\nDownload and install python3\n\n\nDownload and install python-telegram-bot\n\n\n\n\n\n\n\n\n\n\n\n\nIf you're able to run an OS that is not Windows or macOS (\nABSOLUTELY PROPRIETARY\n), then I assume you can handle the installation by yourself.\u00a0\n\u21a9",
+            "title": "Set-Up"
+        },
+        {
+            "location": "/#set-up",
+            "text": "Welcome to an  Introduction to Python with Telegram Bots . To begin, we must first set up the  python programming language  and the  python-telegram-bot library .  Please complete these installation before the workshop.  Instructions for Windows and macOS operating systems follow 1 . If you run into any problems, you may contact through telegram:   @ningyuan",
+            "title": "Set-Up"
+        },
+        {
+            "location": "/#windows",
+            "text": "Download and install python3  Download and install python-telegram-bot",
+            "title": "Windows"
+        },
+        {
+            "location": "/#macos",
+            "text": "Download and install python3  Download and install python-telegram-bot       If you're able to run an OS that is not Windows or macOS ( ABSOLUTELY PROPRIETARY ), then I assume you can handle the installation by yourself.\u00a0 \u21a9",
+            "title": "macOS"
+        },
+        {
+            "location": "/01-basics/",
+            "text": "",
+            "title": "1. Data types, operations, variables"
+        },
+        {
+            "location": "/02-basics/",
+            "text": "",
+            "title": "2. Control flow"
+        },
+        {
+            "location": "/03-basics/",
+            "text": "",
+            "title": "3. Loops"
+        },
+        {
+            "location": "/04-basics/",
+            "text": "",
+            "title": "4. Functions"
+        },
+        {
+            "location": "/05-basics/",
+            "text": "",
+            "title": "5. Data structures"
+        },
+        {
+            "location": "/06-bot/",
+            "text": "",
+            "title": "6. Installing packages"
+        },
+        {
+            "location": "/07-bot/",
+            "text": "",
+            "title": "7. Sending messages"
+        },
+        {
+            "location": "/08-bot/",
+            "text": "",
+            "title": "8. Reacting to messages"
+        },
+        {
+            "location": "/09-bot/",
+            "text": "",
+            "title": "9. Sending commands"
+        },
+        {
+            "location": "/10-bonus/",
+            "text": "",
+            "title": "10. How to Google"
+        }
+    ]
+}
