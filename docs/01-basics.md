@@ -1,4 +1,3 @@
-# Data Types, Operations, and Variables
 One way to understand programming is as a process of _transforming_ data. A simple calculator performing addition is programmed, for example, to transform two numbers into one.
 
 <center>

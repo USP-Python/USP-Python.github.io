@@ -6,15 +6,15 @@ markdown_extensions:
 pages:
     - Set-Up: index.md
     - Basics:
-        - 1. Data types, operations, variables: 01-basics.md
-        - 2. Control flow: 02-basics.md
+        - 1. Data Types, Operations, and Variables: 01-basics.md
+        - 2. Control Flow: 02-basics.md
         - 3. Loops: 03-basics.md
         - 4. Functions: 04-basics.md
-        - 5. Data structures: 05-basics.md
+        - 5. Data Structures: 05-basics.md
     - Bot:
-        - 6. Installing packages: 06-bot.md
-        - 7. Sending messages: 07-bot.md
-        - 8. Reacting to messages: 08-bot.md
-        - 9. Sending commands: 09-bot.md
+        - 6. Installing Packages: 06-bot.md
+        - 7. Sending Messages: 07-bot.md
+        - 8. Reacting to Messages: 08-bot.md
+        - 9. Sending Commands: 09-bot.md
     - Bonus:
         - 10. How to Google: 10-bonus.md
