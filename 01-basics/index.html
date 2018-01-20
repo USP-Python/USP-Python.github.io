@@ -32,7 +32,7 @@
     
     
       
-        <title>1. Data types, operations, variables - Intro to Python with Telgeram Bots</title>
+        <title>1. Data Types, Operations, and Variables - Intro to Python with Telgeram Bots</title>
       
     
     
@@ -87,7 +87,7 @@
                 Intro to Python with Telgeram Bots
               </span>
               <span class="md-header-nav__topic">
-                1. Data types, operations, variables
+                1. Data Types, Operations, and Variables
               </span>
             
           
@@ -196,31 +196,47 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        1. Data types, operations, variables
+        1. Data Types, Operations, and Variables
       </label>
     
-    <a href="./" title="1. Data types, operations, variables" class="md-nav__link md-nav__link--active">
-      1. Data types, operations, variables
+    <a href="./" title="1. Data Types, Operations, and Variables" class="md-nav__link md-nav__link--active">
+      1. Data Types, Operations, and Variables
     </a>
     
       
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#data-types" title="Data Types" class="md-nav__link">
-    Data Types
+  <a href="#data-types-and-their-operations" title="Data Types and Their Operations" class="md-nav__link">
+    Data Types and Their Operations
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integers" title="Integers" class="md-nav__link">
+    Integers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings" title="Strings" class="md-nav__link">
+    Strings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -239,8 +255,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../02-basics/" title="2. Control flow" class="md-nav__link">
-      2. Control flow
+    <a href="../02-basics/" title="2. Control Flow" class="md-nav__link">
+      2. Control Flow
     </a>
   </li>
 
@@ -275,8 +291,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../05-basics/" title="5. Data structures" class="md-nav__link">
-      5. Data structures
+    <a href="../05-basics/" title="5. Data Structures" class="md-nav__link">
+      5. Data Structures
     </a>
   </li>
 
@@ -311,8 +327,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../06-bot/" title="6. Installing packages" class="md-nav__link">
-      6. Installing packages
+    <a href="../06-bot/" title="6. Installing Packages" class="md-nav__link">
+      6. Installing Packages
     </a>
   </li>
 
@@ -323,8 +339,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../07-bot/" title="7. Sending messages" class="md-nav__link">
-      7. Sending messages
+    <a href="../07-bot/" title="7. Sending Messages" class="md-nav__link">
+      7. Sending Messages
     </a>
   </li>
 
@@ -335,8 +351,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../08-bot/" title="8. Reacting to messages" class="md-nav__link">
-      8. Reacting to messages
+    <a href="../08-bot/" title="8. Reacting to Messages" class="md-nav__link">
+      8. Reacting to Messages
     </a>
   </li>
 
@@ -347,8 +363,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../09-bot/" title="9. Sending commands" class="md-nav__link">
-      9. Sending commands
+    <a href="../09-bot/" title="9. Sending Commands" class="md-nav__link">
+      9. Sending Commands
     </a>
   </li>
 
@@ -408,16 +424,34 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#data-types" title="Data Types" class="md-nav__link">
-    Data Types
+  <a href="#data-types-and-their-operations" title="Data Types and Their Operations" class="md-nav__link">
+    Data Types and Their Operations
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integers" title="Integers" class="md-nav__link">
+    Integers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings" title="Strings" class="md-nav__link">
+    Strings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -436,8 +470,9 @@
               
                 
                 
-                <h1 id="data-types-operations-and-variables">Data Types, Operations, and Variables</h1>
-<p>One way to understand programming is as a process of <em>transforming</em> data. A simple calculator performing addition is programmed, for example, to transform two numbers into one.</p>
+                  <h1>1. Data Types, Operations, and Variables</h1>
+                
+                <p>One way to understand programming is as a process of <em>transforming</em> data. A simple calculator performing addition is programmed, for example, to transform two numbers into one.</p>
 <p><center>
 <img alt="Addition" src="../img/01-transform-data.png" />
 </center></p>
@@ -447,18 +482,71 @@
 <li>Operations on data</li>
 <li>Naming of data</li>
 </ol>
-<h2 id="data-types">Data Types</h2>
+<h2 id="data-types-and-their-operations">Data Types and Their Operations</h2>
 <p>There are many built-in data types in python<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>. For now, we need only focus on the following,</p>
 <ul>
 <li>Integers (<code>int</code>)</li>
 <li>Strings (<code>str</code>)</li>
 <li>Booleans (<code>bool</code>)</li>
 </ul>
+<h3 id="integers">Integers</h3>
+<p>Integers represent whole numbers, such as 0, 12, 93214, -1, and so on. In IDLE, try the following, and observe the output:</p>
+<pre><code class="python">&gt;&gt;&gt; 1
+&gt;&gt;&gt; 52
+&gt;&gt;&gt; 0
+&gt;&gt;&gt; -3
+&gt;&gt;&gt; 2 + 6
+&gt;&gt;&gt; 2 - 6
+&gt;&gt;&gt; 2 * 6
+&gt;&gt;&gt; 2 ** 6
+&gt;&gt;&gt; 2 / 6
+&gt;&gt;&gt; 2 // 6
+&gt;&gt;&gt; 2 % 6
+&gt;&gt;&gt; 2 / 0
+&gt;&gt;&gt; 2 // 0
+</code></pre>
+
+<p>As you may have noticed some familiar <strong>operators</strong>, such as addition (<code>+</code>), subtraction (<code>-</code>), multiplication (<code>*</code>), and division (<code>/</code>). The double asterisks (<code>**</code>) is the 'power' operator, which raises the first number to the power of the second; the double forward slashes (<code>//</code>) is the 'floored division' operator, which divides the first number by the second and gives the answer rounded down. The percent sign (<code>%</code>) is the modulo operator, which gives the remainder of the division of the first number by the second.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup></p>
+<p>The last two expressions raises an error, as division by zero is not allowed. </p>
+<pre><code class="python">Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ZeroDivisionError: division by zero
+</code></pre>
+
+<p>Errors in programming are extremely common, but generally harmless. Don't be afraid to run a command and fail! </p>
+<h3 id="strings">Strings</h3>
+<p>Strings are sequences of characters, which can include letters, numbers, and symbols. Strings <em>must</em> be surrounded by either single quotes (<code>'</code>) or double quotes (<code>"</code>).<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> Try the following examples in IDLE:</p>
+<pre><code class="python">&gt;&gt;&gt; 'abcg'
+&gt;&gt;&gt; '!@#$%&amp;'
+&gt;&gt;&gt; '12347'
+&gt;&gt;&gt; 'abc123'
+&gt;&gt;&gt; 'This is a sentence'
+&gt;&gt;&gt; 'You can use single quotes'
+&gt;&gt;&gt; &quot;or double quotes&quot;
+&gt;&gt;&gt; 'as long as you use the same ones for each string...'
+&gt;&gt;&gt; &quot;There can be 4 mix 0f numbers, and symb*$s!&quot;
+</code></pre>
+
+<p>If you find the IDLE spitting errors, for example,</p>
+<pre><code class="python">&gt;&gt;&gt; 'This is a sentence
+  File &quot;&lt;stdin&gt;&quot;, line 1
+    'This is a sentence
+                      ^
+SyntaxError: EOL while scanning string literal
+</code></pre>
+
+<p>Make sure that you have surrounded both ends of the string with quotation marks, and that for each string you have used the same type of quotation marks.</p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
 <p>For the curious, see the <a href="https://docs.python.org/3.6/library/stdtypes.html">docs</a>.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>I use the term 'number' here, instead of integer, as these operations can also apply to other data types, including other representations of numbers.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Which type of quotation marks you use depends on your preference, and sometimes the context. <a href="https://www.codecademy.com/en/forum_questions/5375491180ff33f9370002c7">Here</a> is a decent forum post on this issue.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -495,13 +583,13 @@
           </a>
         
         
-          <a href="../02-basics/" title="2. Control flow" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../02-basics/" title="2. Control Flow" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                2. Control flow
+                2. Control Flow
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

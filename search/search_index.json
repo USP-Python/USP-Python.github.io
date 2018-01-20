@@ -22,23 +22,28 @@
         },
         {
             "location": "/01-basics/",
-            "text": "Data Types, Operations, and Variables\n\n\nOne way to understand programming is as a process of \ntransforming\n data. A simple calculator performing addition is programmed, for example, to transform two numbers into one.\n\n\n\n\n\n\n\n\nIt is therefore necessary to consider,\n\n\n\n\nTypes of data\n\n\nOperations on data\n\n\nNaming of data\n\n\n\n\nData Types\n\n\nThere are many built-in data types in python\n1\n. For now, we need only focus on the following,\n\n\n\n\nIntegers (\nint\n)\n\n\nStrings (\nstr\n)\n\n\nBooleans (\nbool\n)\n\n\n\n\n\n\n\n\n\n\n\n\nFor the curious, see the \ndocs\n.\u00a0\n\u21a9",
-            "title": "1. Data types, operations, variables"
+            "text": "One way to understand programming is as a process of \ntransforming\n data. A simple calculator performing addition is programmed, for example, to transform two numbers into one.\n\n\n\n\n\n\n\n\nIt is therefore necessary to consider,\n\n\n\n\nTypes of data\n\n\nOperations on data\n\n\nNaming of data\n\n\n\n\nData Types and Their Operations\n\n\nThere are many built-in data types in python\n1\n. For now, we need only focus on the following,\n\n\n\n\nIntegers (\nint\n)\n\n\nStrings (\nstr\n)\n\n\nBooleans (\nbool\n)\n\n\n\n\nIntegers\n\n\nIntegers represent whole numbers, such as 0, 12, 93214, -1, and so on. In IDLE, try the following, and observe the output:\n\n\n>>> 1\n>>> 52\n>>> 0\n>>> -3\n>>> 2 + 6\n>>> 2 - 6\n>>> 2 * 6\n>>> 2 ** 6\n>>> 2 / 6\n>>> 2 // 6\n>>> 2 % 6\n>>> 2 / 0\n>>> 2 // 0\n\n\n\n\nAs you may have noticed some familiar \noperators\n, such as addition (\n+\n), subtraction (\n-\n), multiplication (\n*\n), and division (\n/\n). The double asterisks (\n**\n) is the 'power' operator, which raises the first number to the power of the second; the double forward slashes (\n//\n) is the 'floored division' operator, which divides the first number by the second and gives the answer rounded down. The percent sign (\n%\n) is the modulo operator, which gives the remainder of the division of the first number by the second.\n2\n\n\nThe last two expressions raises an error, as division by zero is not allowed. \n\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nZeroDivisionError: division by zero\n\n\n\n\nErrors in programming are extremely common, but generally harmless. Don't be afraid to run a command and fail! \n\n\nStrings\n\n\nStrings are sequences of characters, which can include letters, numbers, and symbols. Strings \nmust\n be surrounded by either single quotes (\n'\n) or double quotes (\n\"\n).\n3\n Try the following examples in IDLE:\n\n\n>>> 'abcg'\n>>> '!@#$%&'\n>>> '12347'\n>>> 'abc123'\n>>> 'This is a sentence'\n>>> 'You can use single quotes'\n>>> \"or double quotes\"\n>>> 'as long as you use the same ones for each string...'\n>>> \"There can be 4 mix 0f numbers, and symb*$s!\"\n\n\n\n\nIf you find the IDLE spitting errors, for example,\n\n\n>>> 'This is a sentence\n  File \"<stdin>\", line 1\n    'This is a sentence\n                      ^\nSyntaxError: EOL while scanning string literal\n\n\n\n\nMake sure that you have surrounded both ends of the string with quotation marks, and that for each string you have used the same type of quotation marks.\n\n\n\n\n\n\n\n\n\n\nFor the curious, see the \ndocs\n.\u00a0\n\u21a9\n\n\n\n\n\n\nI use the term 'number' here, instead of integer, as these operations can also apply to other data types, including other representations of numbers.\u00a0\n\u21a9\n\n\n\n\n\n\nWhich type of quotation marks you use depends on your preference, and sometimes the context. \nHere\n is a decent forum post on this issue.\u00a0\n\u21a9",
+            "title": "1. Data Types, Operations, and Variables"
         },
         {
-            "location": "/01-basics/#data-types-operations-and-variables",
-            "text": "One way to understand programming is as a process of  transforming  data. A simple calculator performing addition is programmed, for example, to transform two numbers into one.     It is therefore necessary to consider,   Types of data  Operations on data  Naming of data",
-            "title": "Data Types, Operations, and Variables"
+            "location": "/01-basics/#data-types-and-their-operations",
+            "text": "There are many built-in data types in python 1 . For now, we need only focus on the following,   Integers ( int )  Strings ( str )  Booleans ( bool )",
+            "title": "Data Types and Their Operations"
         },
         {
-            "location": "/01-basics/#data-types",
-            "text": "There are many built-in data types in python 1 . For now, we need only focus on the following,   Integers ( int )  Strings ( str )  Booleans ( bool )       For the curious, see the  docs .\u00a0 \u21a9",
-            "title": "Data Types"
+            "location": "/01-basics/#integers",
+            "text": "Integers represent whole numbers, such as 0, 12, 93214, -1, and so on. In IDLE, try the following, and observe the output:  >>> 1\n>>> 52\n>>> 0\n>>> -3\n>>> 2 + 6\n>>> 2 - 6\n>>> 2 * 6\n>>> 2 ** 6\n>>> 2 / 6\n>>> 2 // 6\n>>> 2 % 6\n>>> 2 / 0\n>>> 2 // 0  As you may have noticed some familiar  operators , such as addition ( + ), subtraction ( - ), multiplication ( * ), and division ( / ). The double asterisks ( ** ) is the 'power' operator, which raises the first number to the power of the second; the double forward slashes ( // ) is the 'floored division' operator, which divides the first number by the second and gives the answer rounded down. The percent sign ( % ) is the modulo operator, which gives the remainder of the division of the first number by the second. 2  The last two expressions raises an error, as division by zero is not allowed.   Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nZeroDivisionError: division by zero  Errors in programming are extremely common, but generally harmless. Don't be afraid to run a command and fail!",
+            "title": "Integers"
+        },
+        {
+            "location": "/01-basics/#strings",
+            "text": "Strings are sequences of characters, which can include letters, numbers, and symbols. Strings  must  be surrounded by either single quotes ( ' ) or double quotes ( \" ). 3  Try the following examples in IDLE:  >>> 'abcg'\n>>> '!@#$%&'\n>>> '12347'\n>>> 'abc123'\n>>> 'This is a sentence'\n>>> 'You can use single quotes'\n>>> \"or double quotes\"\n>>> 'as long as you use the same ones for each string...'\n>>> \"There can be 4 mix 0f numbers, and symb*$s!\"  If you find the IDLE spitting errors, for example,  >>> 'This is a sentence\n  File \"<stdin>\", line 1\n    'This is a sentence\n                      ^\nSyntaxError: EOL while scanning string literal  Make sure that you have surrounded both ends of the string with quotation marks, and that for each string you have used the same type of quotation marks.      For the curious, see the  docs .\u00a0 \u21a9    I use the term 'number' here, instead of integer, as these operations can also apply to other data types, including other representations of numbers.\u00a0 \u21a9    Which type of quotation marks you use depends on your preference, and sometimes the context.  Here  is a decent forum post on this issue.\u00a0 \u21a9",
+            "title": "Strings"
         },
         {
             "location": "/02-basics/",
             "text": "",
-            "title": "2. Control flow"
+            "title": "2. Control Flow"
         },
         {
             "location": "/03-basics/",
@@ -52,28 +57,28 @@
         },
         {
             "location": "/05-basics/",
-            "text": "A data structure is something we use to store values. A list is an important in-built data structure in python, which we represent using square brackets:\n\n\nlist = [1,2,3,4,5]\n\n\n\n\nWe can access the contents of a list using indices, just like we did for strings. We can also find the length of the list using len. \n\n\nlist = [1,2,3,4,5]\nnumber = list[3] #number = 4\nlength = len(list) #length = 5\n\n\n\n\nLet's now try writing a function to find the average of the values in a list.\n\n\ndef average(list):\n    sum = 0\n    for x in list:\n        sum = sum + x\n    result = sum / len(list)\n    return result\n\n\n\n\nNow, try writing a function that will find you the largest value in a list. \n\n\nAnother useful data structure is called a dictionary.\n\n\ndictionary = {a : 1, b : 2, c : 3}\n\n\n\n\nA dictionary contains entries which are key-value pairs. In the example above, a : 1 is a key-value pair where a is the key and 1 is the value. Just like in a normal dictionary, we can lookup a dictionary to retrieve the corresponding value of a key as such:\n\n\ndic = {a : 1, b : 2, c : 3}\nnumber = dic[b] #number == 2\n\n\n\n\nWe can also add an entry to the dictionary as such:\n\n\ndic[d] = 4\n\n\n\n\nWe can also convert a dictionary into a list as such:\n\n\ndic = {a : 1, b : 2, c : 3}\nitems = dic.items()\n#items = [(a,1), (b,2), (c,3)]\n\n\n\n\nAfter using .items(), we have converted the dictionary into a list containing each entry in a tuple. A tuple using round brackets, and is like a list except that the values in the tuple cannot be changed. \nThis is useful if we want to loop through a dictionary, for example to find a particular key. Let's write a function that will take a dictionary, and give us a list of all the keys that have integer values that are greater than 3. \n\n\ndef findkeys(dic):\n    dic = dic.items()\n    result = []\n    for x in dic:\n        if x[1] > 3:\n            result = result + [x[0]]\n    return result\n\n\n\n\nLet's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing that function yourself!\n\n\nmeals = {\n    'noodle'    :   'SEAFOOD IPOH HOR FUN',\n    'asian'     : '''WHITE & BROWN RICE\n                     SOY BRAISED CHICKEN WING X 2\n                     FISH IN PINEAPPLE SAUCE\n                     SCRAMBLED EGG W/ TOMATO SAUCE\n                     CHYE SIM W/ GARLIC\n                     CARROT & CORN SOUP''',\n    'western'   : '''CREAM OF CARROT\n                     ROASTED BEEF STEAK W/ HERB BROWN SAUCE\n                     MASHED POTATO\n                     MIXED BEANS & MUSHROOM''',\n    'indian'    : '''DAL\n                     PANEER KADAI\n                     CHANA MASLA\n                     VEG JALFREZZI\n                     CHICKEN MASALA\n                     TOMATO RICE''',\n    'malay'     : '''BAKED CHICKEN SERVED W/ MUSHROOM SAUCE\n                     WEDGES\n                     EGGPLANT W/ TOMATO PASTE''',\n    'vegetarian': '''STEAMED BEANCURD W/ MUSHROOM GRAVY\n                     SPRING ROLLS\n                     LO HAN CHAI\n                     STIR FRIED SWEET POTATO LEAVES'''\n}",
-            "title": "5. Data structures"
+            "text": "A data structure is something we use to store values. A list is an important in-built data structure in python, which we represent using square brackets:\n\n\nmy_list = [1, 2, 3, 4, 5]\n\n\n\n\nWe can access the contents of a list using indices, just like we did for strings. We can also find the length of the list using len. \n\n\nmy_list = [1, 2, 3, 4, 5]\nnumber = list[3]    # number == 4\nlength = len(list)  # length == 5\n\n\n\n\nLet's now try writing a function to find the average of the values in a list.\n\n\ndef average(list):\n    sum = 0\n    for x in list:\n        sum = sum + x\n    result = sum / len(list)\n    return result\n\n\n\n\nNow, try writing a function that will find you the largest value in a list. \n\n\nAnother useful data structure is called a dictionary.\n\n\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\n\n\n\n\nA dictionary contains entries which are key-value pairs. In the example above, a : 1 is a key-value pair where a is the key and 1 is the value. Just like in a normal dictionary, we can lookup a dictionary to retrieve the corresponding value of a key as such:\n\n\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nnumber = dic['b']  # number == 2\n\n\n\n\nWe can also add an entry to the dictionary as such:\n\n\nmy_dict['d'] = 4\n\n\n\n\nLet's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing that function yourself!\n\n\nmeals = {\n    'noodle'    :   'SEAFOOD IPOH HOR FUN',\n    'asian'     : '''WHITE & BROWN RICE\n                     SOY BRAISED CHICKEN WING X 2\n                     FISH IN PINEAPPLE SAUCE\n                     SCRAMBLED EGG W/ TOMATO SAUCE\n                     CHYE SIM W/ GARLIC\n                     CARROT & CORN SOUP''',\n    'western'   : '''CREAM OF CARROT\n                     ROASTED BEEF STEAK W/ HERB BROWN SAUCE\n                     MASHED POTATO\n                     MIXED BEANS & MUSHROOM''',\n    'indian'    : '''DAL\n                     PANEER KADAI\n                     CHANA MASLA\n                     VEG JALFREZZI\n                     CHICKEN MASALA\n                     TOMATO RICE''',\n    'malay'     : '''BAKED CHICKEN SERVED W/ MUSHROOM SAUCE\n                     WEDGES\n                     EGGPLANT W/ TOMATO PASTE''',\n    'vegetarian': '''STEAMED BEANCURD W/ MUSHROOM GRAVY\n                     SPRING ROLLS\n                     LO HAN CHAI\n                     STIR FRIED SWEET POTATO LEAVES'''\n}",
+            "title": "5. Data Structures"
         },
         {
             "location": "/06-bot/",
             "text": "",
-            "title": "6. Installing packages"
+            "title": "6. Installing Packages"
         },
         {
             "location": "/07-bot/",
             "text": "",
-            "title": "7. Sending messages"
+            "title": "7. Sending Messages"
         },
         {
             "location": "/08-bot/",
             "text": "",
-            "title": "8. Reacting to messages"
+            "title": "8. Reacting to Messages"
         },
         {
             "location": "/09-bot/",
             "text": "",
-            "title": "9. Sending commands"
+            "title": "9. Sending Commands"
         },
         {
             "location": "/10-bonus/",
