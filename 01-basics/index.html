@@ -235,6 +235,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#booleans" title="Booleans" class="md-nav__link">
+    Booleans
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -450,6 +457,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#booleans" title="Booleans" class="md-nav__link">
+    Booleans
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -490,7 +504,7 @@
 <li>Booleans (<code>bool</code>)</li>
 </ul>
 <h3 id="integers">Integers</h3>
-<p>Integers represent whole numbers, such as 0, 12, 93214, -1, and so on. In IDLE, try the following, and observe the output:</p>
+<p>Integers represent whole numbers, such as 0, 12, 93214, -1, and so on. Try the following, and observe the output,</p>
 <pre><code class="python">&gt;&gt;&gt; 1
 &gt;&gt;&gt; 52
 &gt;&gt;&gt; 0
@@ -502,11 +516,12 @@
 &gt;&gt;&gt; 2 / 6
 &gt;&gt;&gt; 2 // 6
 &gt;&gt;&gt; 2 % 6
+&gt;&gt;&gt; (2 + 6) * 3 / 10
 &gt;&gt;&gt; 2 / 0
 &gt;&gt;&gt; 2 // 0
 </code></pre>
 
-<p>As you may have noticed some familiar <strong>operators</strong>, such as addition (<code>+</code>), subtraction (<code>-</code>), multiplication (<code>*</code>), and division (<code>/</code>). The double asterisks (<code>**</code>) is the 'power' operator, which raises the first number to the power of the second; the double forward slashes (<code>//</code>) is the 'floored division' operator, which divides the first number by the second and gives the answer rounded down. The percent sign (<code>%</code>) is the modulo operator, which gives the remainder of the division of the first number by the second.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup></p>
+<p>As you may have noticed some familiar <strong>operators</strong>, such as addition (<code>+</code>), subtraction (<code>-</code>), multiplication (<code>*</code>), and division (<code>/</code>). The double asterisks (<code>**</code>) is the 'power' operator, which raises the first number to the power of the second; the double forward slashes (<code>//</code>) is the 'floored division' operator, which divides the first number by the second and gives the answer rounded down. The percent sign (<code>%</code>) is the modulo operator, which gives the remainder of the division of the first number by the second.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> The order of operations apply.</p>
 <p>The last two expressions raises an error, as division by zero is not allowed. </p>
 <pre><code class="python">Traceback (most recent call last):
   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
@@ -515,7 +530,7 @@ ZeroDivisionError: division by zero
 
 <p>Errors in programming are extremely common, but generally harmless. Don't be afraid to run a command and fail! </p>
 <h3 id="strings">Strings</h3>
-<p>Strings are sequences of characters, which can include letters, numbers, and symbols. Strings <em>must</em> be surrounded by either single quotes (<code>'</code>) or double quotes (<code>"</code>).<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> Try the following examples in IDLE:</p>
+<p>Strings are sequences of characters, which can include letters, numbers, and symbols. Strings <em>must</em> be surrounded by either single quotes (<code>'</code>) or double quotes (<code>"</code>).<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> Try the following examples:</p>
 <pre><code class="python">&gt;&gt;&gt; 'abcg'
 &gt;&gt;&gt; '!@#$%&amp;'
 &gt;&gt;&gt; '12347'
@@ -536,6 +551,31 @@ SyntaxError: EOL while scanning string literal
 </code></pre>
 
 <p>Make sure that you have surrounded both ends of the string with quotation marks, and that for each string you have used the same type of quotation marks.</p>
+<p><strong>Do not confuse an integer with a string</strong>. The integer <code>12</code> is not the same as the string <code>'12'</code>. Integers are representations of a <em>numerical value</em>, while strings are just characters. The integer <code>12</code> represents the quantity <code>12</code>. The string <code>'12'</code> represents the character <code>'1'</code> followed by the character <code>'2'</code>. Superficially, the former is not wrapped with quotation marks, but the latter is.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup></p>
+<p>Like integers, strings can be operated upon. To concatenate<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup> strings, we use the plus (<code>+</code>) operator.</p>
+<pre><code class="python">&gt;&gt;&gt; 'a' + 'b'
+&gt;&gt;&gt; 'a' + 'b' + 'c' + '1' + '!'
+&gt;&gt;&gt; 'hello, ' + 'how are you today' + '?'
+</code></pre>
+
+<h3 id="booleans">Booleans</h3>
+<p>Unlike integers and strings, which may take up any number of values<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>, booleans can only be <code>True</code> or <code>False</code>.</p>
+<pre><code class="python">&gt;&gt;&gt; True
+&gt;&gt;&gt; False
+</code></pre>
+
+<p>As we will see shortly, booleans are <em>absolutely essential</em> in programming. There are three boolean operators which come in the form of words rather than symbols: <code>not</code>, <code>and</code>, <code>or</code>.</p>
+<pre><code class="python">&gt;&gt;&gt; not True
+&gt;&gt;&gt; not False
+&gt;&gt;&gt; False and False
+&gt;&gt;&gt; True and False
+&gt;&gt;&gt; True and True
+&gt;&gt;&gt; False or False
+&gt;&gt;&gt; True or False
+&gt;&gt;&gt; True or True
+&gt;&gt;&gt; not (not True or (False and not True))
+</code></pre>
+
 <div class="footnote">
 <hr />
 <ol>
@@ -547,6 +587,15 @@ SyntaxError: EOL while scanning string literal
 </li>
 <li id="fn:3">
 <p>Which type of quotation marks you use depends on your preference, and sometimes the context. <a href="https://www.codecademy.com/en/forum_questions/5375491180ff33f9370002c7">Here</a> is a decent forum post on this issue.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Don't worry if this doesn't yet make sense to you. It's may be rather counter-intuitive at first.&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>To connect or combine&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>...which may <em>virtually</em> take up any number of values...&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
