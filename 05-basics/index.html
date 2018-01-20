@@ -380,7 +380,84 @@
                 
                   <h1>5. Data structures</h1>
                 
-                
+                <p>A data structure is something we use to store values. A list is an important in-built data structure in python, which we represent using square brackets:</p>
+<pre><code class="python">list = [1,2,3,4,5]
+</code></pre>
+
+<p>We can access the contents of a list using indices, just like we did for strings. We can also find the length of the list using len. </p>
+<pre><code class="python">list = [1,2,3,4,5]
+number = list[3] #number = 4
+length = len(list) #length = 5
+</code></pre>
+
+<p>Let's now try writing a function to find the average of the values in a list.</p>
+<pre><code class="python">def average(list):
+    sum = 0
+    for x in list:
+        sum = sum + x
+    result = sum / len(list)
+    return result
+</code></pre>
+
+<p>Now, try writing a function that will find you the largest value in a list. </p>
+<p>Another useful data structure is called a dictionary.</p>
+<pre><code class="python">dictionary = {a : 1, b : 2, c : 3}
+</code></pre>
+
+<p>A dictionary contains entries which are key-value pairs. In the example above, a : 1 is a key-value pair where a is the key and 1 is the value. Just like in a normal dictionary, we can lookup a dictionary to retrieve the corresponding value of a key as such:</p>
+<pre><code class="python">dic = {a : 1, b : 2, c : 3}
+number = dic[b] #number == 2
+</code></pre>
+
+<p>We can also add an entry to the dictionary as such:</p>
+<pre><code class="python">dic[d] = 4
+</code></pre>
+
+<p>We can also convert a dictionary into a list as such:</p>
+<pre><code class="python">dic = {a : 1, b : 2, c : 3}
+items = dic.items()
+#items = [(a,1), (b,2), (c,3)]
+</code></pre>
+
+<p>After using .items(), we have converted the dictionary into a list containing each entry in a tuple. A tuple using round brackets, and is like a list except that the values in the tuple cannot be changed. 
+This is useful if we want to loop through a dictionary, for example to find a particular key. Let's write a function that will take a dictionary, and give us a list of all the keys that have integer values that are greater than 3. </p>
+<pre><code class="python">def findkeys(dic):
+    dic = dic.items()
+    result = []
+    for x in dic:
+        if x[1] &gt; 3:
+            result = result + [x[0]]
+    return result
+</code></pre>
+
+<p>Let's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing that function yourself!</p>
+<pre><code class="python">meals = {
+    'noodle'    :   'SEAFOOD IPOH HOR FUN',
+    'asian'     : '''WHITE &amp; BROWN RICE
+                     SOY BRAISED CHICKEN WING X 2
+                     FISH IN PINEAPPLE SAUCE
+                     SCRAMBLED EGG W/ TOMATO SAUCE
+                     CHYE SIM W/ GARLIC
+                     CARROT &amp; CORN SOUP''',
+    'western'   : '''CREAM OF CARROT
+                     ROASTED BEEF STEAK W/ HERB BROWN SAUCE
+                     MASHED POTATO
+                     MIXED BEANS &amp; MUSHROOM''',
+    'indian'    : '''DAL
+                     PANEER KADAI
+                     CHANA MASLA
+                     VEG JALFREZZI
+                     CHICKEN MASALA
+                     TOMATO RICE''',
+    'malay'     : '''BAKED CHICKEN SERVED W/ MUSHROOM SAUCE
+                     WEDGES
+                     EGGPLANT W/ TOMATO PASTE''',
+    'vegetarian': '''STEAMED BEANCURD W/ MUSHROOM GRAVY
+                     SPRING ROLLS
+                     LO HAN CHAI
+                     STIR FRIED SWEET POTATO LEAVES'''
+}
+</code></pre>
                 
                   
                 
