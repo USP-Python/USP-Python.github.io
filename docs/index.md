@@ -53,5 +53,13 @@ If your installation has been successful, it'll look something like this!
 
 ## macOS
 
-1. Download and install python3
-2. Download and install python-telegram-bot
+1. Download and install python version 3.6.4 from the website https://www.python.org/downloads/mac-osx/. 
+2. Download and install python-telegram-bot. 
+
+Open your terminal (just search for "terminal"). Just type in the following line to install:
+
+```
+pip3 install python-telegram-bot
+```
+
+
