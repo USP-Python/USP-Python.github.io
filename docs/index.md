@@ -15,7 +15,7 @@ Instructions for Windows and macOS operating systems follow[^3]. If you run into
 Download the latest Python 3 package from the [official website](https://www.python.org/downloads/).
 <center>![Windows Step 1](img/00-win01.png)</center>
 
-Run the installation with the default configuration. **Take note of where python is being installed**, we will need this later.
+Run the installation with the default configuration. **Take note of where python is being installed**, we will need this later. Take a screenshot of it, or write it down somewhere.
 <center>![Windows Step 2](img/00-win02.png)</center>
 
 After the installation has completed, we will need to add the python package manager to the system path, in order to install the *python-telegram-bot* package. First, find the 'advanced system settings' through the control panel. We recommend you use the search function.
@@ -29,10 +29,12 @@ Select the '_Path_' variable, and click edit.
 
 Click on new. Here, we enter the path to pip3, the Python 3 package manager. The path should look something like this,
 ```
-C:\Users\<your_username>\AppData\Local\Programs\Python\Python36-32\Scripts
+C:\Users\<your_username>\AppData\Local\Programs\Python\Python<version-number>\Scripts
 ```
 
-Remember in the first step when we said to take note of where python is being installed? This is simple the "_Scripts_" folder of that location. So, from the first step, simply add in `"\Scripts"`. 
+**Do not simply copy and paste the above.** Remember in the second step when we said to take note of where python is being installed? This is just the "_Scripts_" folder within that location. So, from the first step, simply add in `"\Scripts"`. 
+
+_(Refer to where Python was installed in the second step. Then, add `\Scripts` to the end of that.)_
 
 Be careful though, as adding in the wrong path will not produce an error in this step. Rather, the later steps will fail. If you want to make sure, you can navigate to the `AppData` folders by typing in `%appdata%` in the windows search menu. 
 <center>![Windows Step 6](img/00-win06.png)</center>
