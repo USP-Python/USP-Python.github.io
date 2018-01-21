@@ -278,20 +278,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../04-basics/" title="4. Loops" class="md-nav__link">
-      4. Loops
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../05-basics/" title="5. Functions" class="md-nav__link">
-      5. Functions
+    <a href="../04-basics/" title="4. Functions" class="md-nav__link">
+      4. Functions
     </a>
   </li>
 
@@ -326,8 +314,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../06-bot/" title="6. Installing Packages" class="md-nav__link">
-      6. Installing Packages
+    <a href="../05-bot/" title="5. Installing Packages" class="md-nav__link">
+      5. Installing Packages
     </a>
   </li>
 
@@ -338,8 +326,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../07-bot/" title="7. Sending Messages" class="md-nav__link">
-      7. Sending Messages
+    <a href="../06-bot/" title="6. Sending Messages" class="md-nav__link">
+      6. Sending Messages
     </a>
   </li>
 
@@ -350,8 +338,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../08-bot/" title="8. Reacting to Messages" class="md-nav__link">
-      8. Reacting to Messages
+    <a href="../07-bot/" title="7. Reacting to Messages" class="md-nav__link">
+      7. Reacting to Messages
     </a>
   </li>
 
@@ -362,8 +350,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../09-bot/" title="9. Sending Commands" class="md-nav__link">
-      9. Sending Commands
+    <a href="../08-bot/" title="8. Sending Commands" class="md-nav__link">
+      8. Sending Commands
     </a>
   </li>
 
@@ -398,8 +386,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../10-bonus/" title="10. How to Google" class="md-nav__link">
-      10. How to Google
+    <a href="../09-bonus/" title="9. How to Google" class="md-nav__link">
+      9. How to Google
     </a>
   </li>
 
@@ -513,6 +501,15 @@ eagles
 crocs
 </code></pre>
 
+<p>Try reading this program to figure out what it does: </p>
+<pre><code class="python">str = &quot;hello&quot;
+new_str = &quot;&quot;
+for letter in str:
+    new_str = letter + new_str
+print(new_str)
+</code></pre>
+
+<p>Basically, it loops through each letter in the string "hello", and at every stage of the loop, we add the letter to the back of the new_str. So, this program reverses the letters in the string.</p>
 <h3 id="the-while-statement">The <code>while</code> Statement</h3>
 <p><code>while</code> a certain condition is true, the loop continues until the condition turns false. </p>
 <pre><code class="python">num = 88
@@ -528,6 +525,18 @@ while run:
         print('That's right!')
         run = False
 </code></pre>
+
+<p>This program uses a while loop to sum up the integers from 1 to 9. </p>
+<pre><code class="python">counter = 0
+sum = 0
+while counter &lt; 10:
+      sum = sum + counter
+      counter = counter + 1
+print(sum)
+</code></pre>
+
+<p>In this while loop, "counter &lt; 10" is a condition. So, at every iteration of the loop, the counter is added to sum, and the value of the counter is incremented by 1. When counter becomes 10, the program will break out of the loop and print the value of sum, which is 45. </p>
+<p>Can you try writing a program to reverse the order of letters using a while loop? </p>
                 
                   
                 
@@ -561,13 +570,13 @@ while run:
           </a>
         
         
-          <a href="../04-basics/" title="4. Loops" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../04-basics/" title="4. Functions" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                4. Loops
+                4. Functions
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

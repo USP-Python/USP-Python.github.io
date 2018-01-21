@@ -35,15 +35,15 @@
      <changefreq>daily</changefreq>
     </url>
         
-    <url>
-     <loc>/05-basics/</loc>
-     <lastmod>2018-01-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
     
 
     
+        
+    <url>
+     <loc>/05-bot/</loc>
+     <lastmod>2018-01-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
         
     <url>
      <loc>/06-bot/</loc>
@@ -63,18 +63,12 @@
      <changefreq>daily</changefreq>
     </url>
         
-    <url>
-     <loc>/09-bot/</loc>
-     <lastmod>2018-01-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
     
 
     
         
     <url>
-     <loc>/10-bonus/</loc>
+     <loc>/09-bonus/</loc>
      <lastmod>2018-01-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
