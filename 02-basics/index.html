@@ -466,14 +466,14 @@
                   <h1>2. Control Flow</h1>
                 
                 <p>Similar to how you would read a script, Python reads in a top-down order. You, the scriptwriter, are able to control how Python reads and execute the script. </p>
-<p>This is achieved using <em>control flow statements</em>. There are 3 common control flow statements in Python,</p>
+<p>This is achieved using <em>control flow</em> statements. There are 3 common control flow statements in Python,</p>
 <ol>
 <li><code>if</code></li>
 <li><code>for</code></li>
 <li><code>while</code></li>
 </ol>
 <h3 id="the-if-statement">The <code>if</code> Statement</h3>
-<p>Simply put, <code>if</code> a certain condition is <code>true</code>, Python runs the block of statement in the <code>if</code>-block, <code>else</code> it runs the statements in the <code>else</code>-block. The <code>else</code> clause is optional.</p>
+<p>Simply put, <code>if</code> a certain condition is <code>true</code>, Python runs the block of statement in the <code>if</code>-block, <em>else</em> it runs the statements in the <code>else</code>-block. The <code>else</code> clause is optional.</p>
 <pre><code class="python">grade = input('Enter your grade: ')
 
 if grades &gt;= 85: 
@@ -500,9 +500,9 @@ End
 </code></pre>
 
 <p>It can also be use to iterate through a list.</p>
-<pre><code class="python">myPets = ['lions', 'tigers', 'eagles', 'crocs']
+<pre><code class="python">my_pets = ['lions', 'tigers', 'eagles', 'crocs']
 
-for pets in myPets:
+for pets in my_pets:
     print(pets)
 </code></pre>
 
@@ -518,7 +518,7 @@ crocs
 <pre><code class="python">num = 88
 run = True
 
-while run :
+while run:
     guess = input('Enter your guess: ')
     if guess &lt; num:
         print('The answer is higher')
