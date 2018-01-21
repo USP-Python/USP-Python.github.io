@@ -1,13 +1,13 @@
 Similar to how you would read a script, Python reads in a top-down order. You, the scriptwriter, are able to control how Python reads and execute the script. 
 
-This is achieved using _control flow statements_. There are 3 common control flow statements in Python,
+This is achieved using _control flow_ statements. There are 3 common control flow statements in Python,
 
 1. `if`
 2. `for`
 3. `while`
  
 ### The `if` Statement
-Simply put, `if` a certain condition is `true`, Python runs the block of statement in the `if`-block, `else` it runs the statements in the `else`-block. The `else` clause is optional.
+Simply put, `if` a certain condition is `true`, Python runs the block of statement in the `if`-block, _else_ it runs the statements in the `else`-block. The `else` clause is optional.
 
 ```python
 grade = input('Enter your grade: ')
@@ -42,9 +42,9 @@ End
 It can also be use to iterate through a list.
 
 ```python
-myPets = ['lions', 'tigers', 'eagles', 'crocs']
+my_pets = ['lions', 'tigers', 'eagles', 'crocs']
 
-for pets in myPets:
+for pets in my_pets:
     print(pets)
 ```
 
@@ -64,7 +64,7 @@ crocs
 num = 88
 run = True
 
-while run :
+while run:
     guess = input('Enter your guess: ')
     if guess < num:
         print('The answer is higher')
