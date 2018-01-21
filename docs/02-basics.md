@@ -13,11 +13,11 @@ Simply put, `if` a certain condition is `true`, Python runs the block of stateme
 grade = input('Enter your grade: ')
 
 if grades >= 85: 
-	print('Great job!')
+    print('Great job!')
 elif grades >= 50:
-	print('Study harder!')
+    print('Study harder!')
 else:
-	print('Hello! Wake up!')
+    print('Hello! Wake up!')
 ``` 
 
 ### The `for` Statement
@@ -25,19 +25,19 @@ A 'for' loop allows the programmer to iterate over a sequence of objects.
 
 ```python
 for i in range(1,5)
-	print(i)
+    print(i)
 print('End')
 ``` 
 
 Output
 
-'''python
+```python
 1
 2
 3
 4
 End
-'''
+```
 
 It can also be use to iterate through a list.
 
@@ -45,17 +45,17 @@ It can also be use to iterate through a list.
 myPets = ['lions', 'tigers', 'eagles', 'crocs']
 
 for pets in myPets:
-	print(pets)
+    print(pets)
 ```
 
 Output
 
-'''python
+```python
 lions
 tigers
 eagles
 crocs
-'''
+```
 
 ### The `while` Statement 
 `while` a certain condition is true, the loop continues until the condition turns false. 
@@ -64,16 +64,13 @@ crocs
 num = 88
 run = True
 
-while(run){
-	guess = input('Enter your guess: ')
-	if guess < num:
-		print('The answer is higher')
-	elif guess > num:
-		print('The answer is lower')
-	else guess == num:
-		print('That's right!')
-		run = False
-} 
-
+while run :
+    guess = input('Enter your guess: ')
+    if guess < num:
+        print('The answer is higher')
+    elif guess > num:
+        print('The answer is lower')
+    elif guess == num:
+        print('That's right!')
+        run = False
 ```
-
