@@ -68,6 +68,8 @@ print(new_str)
 ```
 Basically, it loops through each letter in the string "hello", and at every stage of the loop, we add the letter to the back of the new_str. So, this program reverses the letters in the string.
 
+Now, try writing a program that finds the largest number in a given list. 
+
 ### The `while` Statement 
 `while` a certain condition is true, the loop continues until the condition turns false. 
 
