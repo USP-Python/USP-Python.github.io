@@ -24,7 +24,21 @@ def sayhi():
 Functions are an important tool that allows us to organise our code and package sets of instructions which perform a specific task. 
 Once we have defined a function, we will be able to use it in multiple places. We can also use functions that other people have written in our code.
 
-//give example
+For example, let's say that we have downloaded some data off an excel file as a list of lists, with each sublist representing a row.
+
+```python 
+#input = [[1,2,3,4],[5,6,7,8],[2,3,4,5] ... ]
+```
+
+We can use the predefined sum() and max() function in python to find the sum of values in a list. So, we can write a function that takes in this input and finds the maximum value out of all the data. 
+
+```python
+def max_val(input):
+    list = []
+    for lst in input:
+        list = list + [sum(lst)]
+    return max(list)
+```
 
 Let's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing that function yourself!
 
