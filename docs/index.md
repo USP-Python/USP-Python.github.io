@@ -7,8 +7,44 @@ Instructions for Windows and macOS operating systems follow[^3]. If you run into
 
 ## Windows
 
-1. Download and install python3 at https://www.python.org/downloads/release/python-364/. Choose Windows x86-64 executable installer, and just follow the instructions to install. 
-2. Download and install python-telegram-bot
+Download the latest Python 3 package from the [official website](https://www.python.org/downloads/).
+<center>![Windows Step 1](img/00-win01.png)</center>
+
+Run the installation with the default configuration. **Take note of where python is being installed**, we will need this later.
+<center>![Windows Step 2](img/00-win02.png)</center>
+
+After the installation has completed, we will need to add the python package manager to the system path, in order to install the *python-telegram-bot* package. First, find the 'advanced system settings' through the control panel. We recommend you use the search function.
+<center>![Windows Step 3](img/00-win03.png)</center>
+
+Then, click on 'environment variables'.
+<center>![Windows Step 4](img/00-win04.png)</center>
+
+Select the '_Path_' variable, and click edit.
+<center>![Windows Step 5](img/00-win05.png)</center>
+
+Click on new. Here, we enter the path to pip3, the Python 3 package manager. The path should look something like this,
+```
+C:\Users\<your_username>\AppData\Local\Programs\Python\Python36-32\Scripts
+```
+
+Remember in the first step when we said to take note of where python is being installed? This is simple the "_Scripts_" folder of that location. So, from the first step, simply add in `"\Scripts"`. 
+
+Be careful though, as adding in the wrong path will not produce an error in this step. Rather, the later steps will fail. If you want to make sure, you can navigate to the `AppData` folders by typing in `%appdata%` in the windows search menu. 
+<center>![Windows Step 6](img/00-win06.png)</center>
+
+You should have something that looks like this. Press 'OK' on everything, and proceed on to the next step.
+<center>![Windows Step 7](img/00-win07.png)</center>
+
+Open up the windows command prompt. You can do this by searching for the application _'Command Propt'_, or by opening up the run window with the Windows Key + `R`, and typing in `cmd`.
+
+Enter the following command to execute the installation
+```
+pip3 install python-telegram-bot
+```
+<center>![Windows Step 8](img/00-win08.png)</center>
+
+If your installation has been successful, it'll look something like this!
+<center>![Windows Step 9](img/00-win09.png)</center>
 
 ## macOS
 
