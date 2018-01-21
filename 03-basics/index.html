@@ -28,7 +28,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.0">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.1">
     
     
       
@@ -36,7 +36,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.2a88008a.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.aa3de92b.css">
       
     
     
@@ -65,6 +65,7 @@
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -380,7 +381,26 @@
                 
                   <h1>3. Loops</h1>
                 
-                
+                <p>There are two main kinds of loops: while loops and for loops. This code uses a while loop to sum up the integers from 1 to 9. </p>
+<pre><code class="python">counter = 0
+sum = 0
+while counter &lt; 10:
+      sum = sum + counter
+      counter = counter + 1
+print(sum)
+</code></pre>
+
+<p>In this while loop, "counter &lt; 10" is a condition. So, at every iteration of the loop, the counter is added to sum, and the value of the counter is incremented by 1. When counter becomes 10, the program will break out of the loop and print the value of sum, which is 45. </p>
+<p>This program uses a for loop:</p>
+<pre><code class="python">str = &quot;hello&quot;
+new_str = &quot;&quot;
+for letter in str:
+    new_str = letter + new_str
+print(new_str)
+</code></pre>
+
+<p>Basically, it loops through each letter in the string "hello", and at every stage of the loop, we add the letter to the back of the new_str. So, this program reverses the letters in the string.</p>
+<p>Can you try writing a similar program to reverse the order of letters using a while loop? </p>
                 
                   
                 
@@ -450,7 +470,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.ce2ab4bf.js"></script>
+      <script src="../assets/javascripts/application.ed2cc613.js"></script>
       
       <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
       
