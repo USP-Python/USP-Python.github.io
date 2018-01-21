@@ -1,42 +1,58 @@
-A data structure is something we use to store values. A list is an important in-built data structure in python, which we represent using square brackets:
-
-```python
-my_list = [1, 2, 3, 4, 5]
+```python 
+def sum(x, y):
+    return x+y
 ```
 
-We can access the contents of a list using indices, just like we did for strings. We can also find the length of the list using len. 
+This is a function. We use the keyword "def" to start off the function, followed by the name of the function (in this case, "sum"). 
+Within the brackets, we specify the parameters or inputs to the function. We use the keyword "return" to specify the outputs of the function.
+
+To use a function, or perform what we call a function call, we could write:
 
 ```python
-my_list = [1, 2, 3, 4, 5]
-number = list[3]    # number == 4
-length = len(list)  # length == 5
-```
-Let's now try writing a function to find the average of the values in a list.
-
-```python
-def average(list):
-    sum = 0
-    for x in list:
-        sum = sum + x
-    result = sum / len(list)
-    return result
-```
-Now, try writing a function that will find you the largest value in a list. 
-
-Another useful data structure is called a dictionary.
-
-```python
-my_dict = {'a': 1, 'b': 2, 'c': 3}
-```
-A dictionary contains entries which are key-value pairs. In the example above, a : 1 is a key-value pair where a is the key and 1 is the value. Just like in a normal dictionary, we can lookup a dictionary to retrieve the corresponding value of a key as such:
-
-```python
-my_dict = {'a': 1, 'b': 2, 'c': 3}
-number = dic['b']  # number == 2
+a = sum(3,4)
 ```
 
-We can also add an entry to the dictionary as such:
+This assigns the value of sum(3,4), which is 7, to the variable a. 
+
+Unlike in maths, however, functions in python do not need to have inputs and outputs. So, this is also a valid function:
 
 ```python
-my_dict['d'] = 4
+def sayhi():
+    print("hi")
+```
+
+Functions are an important tool that allows us to organise our code and package sets of instructions which perform a specific task. 
+Once we have defined a function, we will be able to use it in multiple places. We can also use functions that other people have written in our code.
+
+//give example
+
+Let's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing that function yourself!
+
+```python
+meals = {
+    'noodle'    :   'SEAFOOD IPOH HOR FUN',
+    'asian'     : '''WHITE & BROWN RICE
+                     SOY BRAISED CHICKEN WING X 2
+                     FISH IN PINEAPPLE SAUCE
+                     SCRAMBLED EGG W/ TOMATO SAUCE
+                     CHYE SIM W/ GARLIC
+                     CARROT & CORN SOUP''',
+    'western'   : '''CREAM OF CARROT
+                     ROASTED BEEF STEAK W/ HERB BROWN SAUCE
+                     MASHED POTATO
+                     MIXED BEANS & MUSHROOM''',
+    'indian'    : '''DAL
+                     PANEER KADAI
+                     CHANA MASLA
+                     VEG JALFREZZI
+                     CHICKEN MASALA
+                     TOMATO RICE''',
+    'malay'     : '''BAKED CHICKEN SERVED W/ MUSHROOM SAUCE
+                     WEDGES
+                     EGGPLANT W/ TOMATO PASTE''',
+    'vegetarian': '''STEAMED BEANCURD W/ MUSHROOM GRAVY
+                     SPRING ROLLS
+                     LO HAN CHAI
+                     STIR FRIED SWEET POTATO LEAVES'''
+}
 ```

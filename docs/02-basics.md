@@ -1,102 +1,42 @@
-Similar to how you would read a script, Python reads in a top-down order. You, the scriptwriter, are able to control how Python reads and execute the script. 
-
-This is achieved using _control flow_ statements. There are 3 common control flow statements in Python,
-
-1. `if`
-2. `for`
-3. `while`
- 
-### The `if` Statement
-Simply put, `if` a certain condition is `true`, Python runs the block of statement in the `if`-block, _else_ it runs the statements in the `else`-block. The `else` clause is optional.
+A data structure is something we use to store values. A list is an important in-built data structure in python, which we represent using square brackets:
 
 ```python
-grade = input('Enter your grade: ')
-
-if grades >= 85: 
-    print('Great job!')
-elif grades >= 50:
-    print('Study harder!')
-else:
-    print('Hello! Wake up!')
-``` 
-
-### The `for` Statement
-A 'for' loop allows the programmer to iterate over a sequence of objects.
-
-```python
-for i in range(1,5)
-    print(i)
-print('End')
-``` 
-
-Output
-
-```python
-1
-2
-3
-4
-End
+my_list = [1, 2, 3, 4, 5]
 ```
 
-It can also be use to iterate through a list.
+We can access the contents of a list using indices, just like we did for strings. We can also find the length of the list using len. 
 
 ```python
-my_pets = ['lions', 'tigers', 'eagles', 'crocs']
-
-for pets in my_pets:
-    print(pets)
+my_list = [1, 2, 3, 4, 5]
+number = list[3]    # number == 4
+length = len(list)  # length == 5
 ```
-
-Output
+Let's now try writing a function to find the average of the values in a list.
 
 ```python
-lions
-tigers
-eagles
-crocs
+def average(list):
+    sum = 0
+    for x in list:
+        sum = sum + x
+    result = sum / len(list)
+    return result
 ```
+Now, try writing a function that will find you the largest value in a list. 
 
-Try reading this program to figure out what it does: 
+Another useful data structure is called a dictionary.
 
 ```python
-str = "hello"
-new_str = ""
-for letter in str:
-    new_str = letter + new_str
-print(new_str)
+my_dict = {'a': 1, 'b': 2, 'c': 3}
 ```
-Basically, it loops through each letter in the string "hello", and at every stage of the loop, we add the letter to the back of the new_str. So, this program reverses the letters in the string.
-
-### The `while` Statement 
-`while` a certain condition is true, the loop continues until the condition turns false. 
+A dictionary contains entries which are key-value pairs. In the example above, a : 1 is a key-value pair where a is the key and 1 is the value. Just like in a normal dictionary, we can lookup a dictionary to retrieve the corresponding value of a key as such:
 
 ```python
-num = 88
-run = True
-
-while run:
-    guess = input('Enter your guess: ')
-    if guess < num:
-        print('The answer is higher')
-    elif guess > num:
-        print('The answer is lower')
-    elif guess == num:
-        print('That's right!')
-        run = False
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+number = dic['b']  # number == 2
 ```
 
-This program uses a while loop to sum up the integers from 1 to 9. 
+We can also add an entry to the dictionary as such:
 
 ```python
-counter = 0
-sum = 0
-while counter < 10:
-      sum = sum + counter
-      counter = counter + 1
-print(sum)
+my_dict['d'] = 4
 ```
-
-In this while loop, "counter < 10" is a condition. So, at every iteration of the loop, the counter is added to sum, and the value of the counter is incremented by 1. When counter becomes 10, the program will break out of the loop and print the value of sum, which is 45. 
-
-Can you try writing a program to reverse the order of letters using a while loop? 

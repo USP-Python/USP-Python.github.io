@@ -7,10 +7,10 @@ pages:
     - Set-Up: index.md
     - Basics:
         - 1. Data Types, Operations, and Variables: 01-basics.md
-        - 2. Control Flow: 02-basics.md
-        - 3. Loops: 03-basics.md
-        - 4. Functions: 04-basics.md
-        - 5. Data Structures: 05-basics.md
+        - 2. Data Structures: 02-basics.md
+        - 3. Control Flow: 03-basics.md
+        - 4. Loops: 04-basics.md
+        - 5. Functions: 05-basics.md
     - Bot:
         - 6. Installing Packages: 06-bot.md
         - 7. Sending Messages: 07-bot.md
