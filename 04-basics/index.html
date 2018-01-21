@@ -32,7 +32,7 @@
     
     
       
-        <title>4. Functions - Intro to Python with Telgeram Bots</title>
+        <title>4. Loops - Intro to Python with Telgeram Bots</title>
       
     
     
@@ -88,7 +88,7 @@
                 Intro to Python with Telgeram Bots
               </span>
               <span class="md-header-nav__topic">
-                4. Functions
+                4. Loops
               </span>
             
           
@@ -204,8 +204,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../02-basics/" title="2. Control Flow" class="md-nav__link">
-      2. Control Flow
+    <a href="../02-basics/" title="2. Data Structures" class="md-nav__link">
+      2. Data Structures
     </a>
   </li>
 
@@ -216,8 +216,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../03-basics/" title="3. Loops" class="md-nav__link">
-      3. Loops
+    <a href="../03-basics/" title="3. Control Flow" class="md-nav__link">
+      3. Control Flow
     </a>
   </li>
 
@@ -234,8 +234,8 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
-    <a href="./" title="4. Functions" class="md-nav__link md-nav__link--active">
-      4. Functions
+    <a href="./" title="4. Loops" class="md-nav__link md-nav__link--active">
+      4. Loops
     </a>
     
   </li>
@@ -247,8 +247,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../05-basics/" title="5. Data Structures" class="md-nav__link">
-      5. Data Structures
+    <a href="../05-basics/" title="5. Functions" class="md-nav__link">
+      5. Functions
     </a>
   </li>
 
@@ -379,27 +379,28 @@
               
                 
                 
-                  <h1>4. Functions</h1>
+                  <h1>4. Loops</h1>
                 
-                <pre><code class="python">def sum(x, y):
-    return x+y
+                <p>There are two main kinds of loops: while loops and for loops. This code uses a while loop to sum up the integers from 1 to 9. </p>
+<pre><code class="python">counter = 0
+sum = 0
+while counter &lt; 10:
+      sum = sum + counter
+      counter = counter + 1
+print(sum)
 </code></pre>
 
-<p>This is a function. We use the keyword "def" to start off the function, followed by the name of the function (in this case, "sum"). 
-Within the brackets, we specify the parameters or inputs to the function. We use the keyword "return" to specify the outputs of the function.</p>
-<p>To use a function, or perform what we call a function call, we could write:</p>
-<pre><code class="python">a = sum(3,4)
+<p>In this while loop, "counter &lt; 10" is a condition. So, at every iteration of the loop, the counter is added to sum, and the value of the counter is incremented by 1. When counter becomes 10, the program will break out of the loop and print the value of sum, which is 45. </p>
+<p>This program uses a for loop:</p>
+<pre><code class="python">str = &quot;hello&quot;
+new_str = &quot;&quot;
+for letter in str:
+    new_str = letter + new_str
+print(new_str)
 </code></pre>
 
-<p>This assigns the value of sum(3,4), which is 7, to the variable a. </p>
-<p>Unlike in maths, however, functions in python do not need to have inputs and outputs. So, this is also a valid function:</p>
-<pre><code class="python">def sayhi():
-    print(&quot;hi&quot;)
-</code></pre>
-
-<p>Functions are an important tool that allows us to organise our code and package sets of instructions which perform a specific task. 
-Once we have defined a function, we will be able to use it in multiple places. We can also use functions that other people have written in our code.</p>
-<p>//give example</p>
+<p>Basically, it loops through each letter in the string "hello", and at every stage of the loop, we add the letter to the back of the new_str. So, this program reverses the letters in the string.</p>
+<p>Can you try writing a similar program to reverse the order of letters using a while loop? </p>
                 
                   
                 
@@ -418,7 +419,7 @@ Once we have defined a function, we will be able to use it in multiple places. W
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../03-basics/" title="3. Loops" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../03-basics/" title="3. Control Flow" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -427,19 +428,19 @@ Once we have defined a function, we will be able to use it in multiple places. W
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                3. Loops
+                3. Control Flow
               </span>
             </div>
           </a>
         
         
-          <a href="../05-basics/" title="5. Data Structures" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../05-basics/" title="5. Functions" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                5. Data Structures
+                5. Functions
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
