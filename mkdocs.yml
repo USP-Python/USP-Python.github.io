@@ -9,12 +9,11 @@ pages:
         - 1. Data Types, Operations, and Variables: 01-basics.md
         - 2. Data Structures: 02-basics.md
         - 3. Control Flow: 03-basics.md
-        - 4. Loops: 04-basics.md
-        - 5. Functions: 05-basics.md
+        - 4. Functions: 04-basics.md
     - Bot:
-        - 6. Installing Packages: 06-bot.md
-        - 7. Sending Messages: 07-bot.md
-        - 8. Reacting to Messages: 08-bot.md
-        - 9. Sending Commands: 09-bot.md
+        - 5. Installing Packages: 05-bot.md
+        - 6. Sending Messages: 06-bot.md
+        - 7. Reacting to Messages: 07-bot.md
+        - 8. Sending Commands: 08-bot.md
     - Bonus:
-        - 10. How to Google: 10-bonus.md
+        - 9. How to Google: 09-bonus.md

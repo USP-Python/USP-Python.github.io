@@ -1,26 +1,58 @@
-There are two main kinds of loops: while loops and for loops. This code uses a while loop to sum up the integers from 1 to 9. 
-
-```python
-counter = 0
-sum = 0
-while counter < 10:
-      sum = sum + counter
-      counter = counter + 1
-print(sum)
+```python 
+def sum(x, y):
+    return x+y
 ```
 
-In this while loop, "counter < 10" is a condition. So, at every iteration of the loop, the counter is added to sum, and the value of the counter is incremented by 1. When counter becomes 10, the program will break out of the loop and print the value of sum, which is 45. 
+This is a function. We use the keyword "def" to start off the function, followed by the name of the function (in this case, "sum"). 
+Within the brackets, we specify the parameters or inputs to the function. We use the keyword "return" to specify the outputs of the function.
 
-This program uses a for loop:
+To use a function, or perform what we call a function call, we could write:
 
 ```python
-str = "hello"
-new_str = ""
-for letter in str:
-    new_str = letter + new_str
-print(new_str)
+a = sum(3,4)
 ```
 
-Basically, it loops through each letter in the string "hello", and at every stage of the loop, we add the letter to the back of the new_str. So, this program reverses the letters in the string.
+This assigns the value of sum(3,4), which is 7, to the variable a. 
 
-Can you try writing a similar program to reverse the order of letters using a while loop? 
+Unlike in maths, however, functions in python do not need to have inputs and outputs. So, this is also a valid function:
+
+```python
+def sayhi():
+    print("hi")
+```
+
+Functions are an important tool that allows us to organise our code and package sets of instructions which perform a specific task. 
+Once we have defined a function, we will be able to use it in multiple places. We can also use functions that other people have written in our code.
+
+//give example
+
+Let's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing that function yourself!
+
+```python
+meals = {
+    'noodle'    :   'SEAFOOD IPOH HOR FUN',
+    'asian'     : '''WHITE & BROWN RICE
+                     SOY BRAISED CHICKEN WING X 2
+                     FISH IN PINEAPPLE SAUCE
+                     SCRAMBLED EGG W/ TOMATO SAUCE
+                     CHYE SIM W/ GARLIC
+                     CARROT & CORN SOUP''',
+    'western'   : '''CREAM OF CARROT
+                     ROASTED BEEF STEAK W/ HERB BROWN SAUCE
+                     MASHED POTATO
+                     MIXED BEANS & MUSHROOM''',
+    'indian'    : '''DAL
+                     PANEER KADAI
+                     CHANA MASLA
+                     VEG JALFREZZI
+                     CHICKEN MASALA
+                     TOMATO RICE''',
+    'malay'     : '''BAKED CHICKEN SERVED W/ MUSHROOM SAUCE
+                     WEDGES
+                     EGGPLANT W/ TOMATO PASTE''',
+    'vegetarian': '''STEAMED BEANCURD W/ MUSHROOM GRAVY
+                     SPRING ROLLS
+                     LO HAN CHAI
+                     STIR FRIED SWEET POTATO LEAVES'''
+}
+```
