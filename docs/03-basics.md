@@ -20,6 +20,21 @@ else:
     print('Hello! Wake up!')
 ``` 
 
+There is also the special operator "in" which we can use to check if an element is in a string, list, or dictionary. What does the following program print?
+
+```python
+lst = [1,2,3,4]
+dic = {1 : 2, 3 : 4}
+if 2 not in lst:
+    print("hi")
+elif 2 in dic:
+    print("hello")
+elif 1 in dic:
+    print("hallo")
+else:
+    print("hey")
+```
+
 ### The `for` Statement
 A 'for' loop allows the programmer to iterate over a sequence of objects.
 
@@ -60,9 +75,9 @@ crocs
 Try reading this program to figure out what it does: 
 
 ```python
-str = "hello"
+string = "hello"
 new_str = ""
-for letter in str:
+for letter in string:
     new_str = letter + new_str
 print(new_str)
 ```
