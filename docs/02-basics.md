@@ -15,10 +15,10 @@ Let's now try writing a function to find the average of the values in a list.
 
 ```python
 def average(lst):
-    sum = 0
+    total = 0
     for x in lst:
-        sum = sum + x
-    result = sum / len(lst)
+        total = total + x
+    result = total / len(lst)
     return result
 ```
 Now, try writing a function that will find you the largest value in a list. 
