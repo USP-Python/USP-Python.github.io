@@ -8,17 +8,17 @@ We can access the contents of a list using indices, just like we did for strings
 
 ```python
 my_list = [1, 2, 3, 4, 5]
-number = list[3]    # number == 4
-length = len(list)  # length == 5
+number = my_list[3]    # number == 4
+length = len(my_list)  # length == 5
 ```
 Let's now try writing a function to find the average of the values in a list.
 
 ```python
-def average(list):
+def average(lst):
     sum = 0
-    for x in list:
+    for x in lst:
         sum = sum + x
-    result = sum / len(list)
+    result = sum / len(lst)
     return result
 ```
 Now, try writing a function that will find you the largest value in a list. 
