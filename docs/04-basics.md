@@ -39,8 +39,24 @@ def max_val(input):
         list = list + [sum(lst)]
     return max(list)
 ```
+To consolidate what we've learnt so far, let's try out writing two functions.
 
-Let's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing that function yourself!
+Firstly, suppose we want to write a function freq_dic() that takes in a paragraph and outputs a dictionary of word frequencies. So, each key in the dictionary is a word in the paragraph, and the value is the number of times the word appears in the paragraph. For example, 
+
+```python
+para = "the cat on the hat is eating the rat on the mat"
+dic = make_dic(para)
+#dic = {'the': 4, 'cat': 1, 'on': 2, 'hat': 1, 'is': 1, 'eating': 1, 'rat': 1, 'mat': 1}
+```
+For this exercise, we will use the method .split() to split the paragraph into a list of words. For example:
+
+```python
+string = "I don't eat fish"
+lst = string.split()
+#lst = ['I', "don't", 'eat', 'fish']
+```
+
+Next, let's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing this function find_no_fish() yourself!
 
 ```python
 meals = {
