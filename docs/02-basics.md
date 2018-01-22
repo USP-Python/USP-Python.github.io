@@ -11,17 +11,17 @@ my_list = [1, 2, 3, 4, 5]
 number = my_list[3]    # number == 4
 length = len(my_list)  # length == 5
 ```
-Let's now try writing a function to find the average of the values in a list.
+Let's now try writing a program to find the average of the values in a list.
 
 ```python
-def average(lst):
-    total = 0
-    for x in lst:
-        total = total + x
-    result = total / len(lst)
-    return result
+lst = [1, 2, 3, 4]
+total = 0
+for x in lst:
+    total = total + x
+result = total / len(lst)
+print(result)
 ```
-Now, try writing a function that will find you the largest value in a list. 
+Now, try writing a program that will find you the largest value in a list. 
 
 Another useful data structure is called a dictionary.
 
