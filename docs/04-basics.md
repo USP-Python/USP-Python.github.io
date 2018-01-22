@@ -34,10 +34,10 @@ We can use the predefined sum() and max() function in python to find the sum of 
 
 ```python
 def max_val(input):
-    list = []
+    newlst = []
     for lst in input:
-        list = list + [sum(lst)]
-    return max(list)
+        newlst = newlst + [sum(lst)]
+    return max(newlst)
 ```
 To consolidate what we've learnt so far, let's try out writing two functions.
 
