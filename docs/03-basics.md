@@ -107,13 +107,13 @@ This program uses a while loop to sum up the integers from 1 to 9.
 
 ```python
 counter = 0
-sum = 0
+total = 0
 while counter < 10:
-      sum = sum + counter
+      total = total + counter
       counter = counter + 1
-print(sum)
+print(total)
 ```
 
-In this while loop, "counter < 10" is a condition. So, at every iteration of the loop, the counter is added to sum, and the value of the counter is incremented by 1. When counter becomes 10, the program will break out of the loop and print the value of sum, which is 45. 
+In this while loop, "counter < 10" is a condition. So, at every iteration of the loop, the counter is added to total, and the value of the counter is incremented by 1. When counter becomes 10, the program will break out of the loop and print the value of total, which is 45. 
 
 Can you try writing a program to reverse the order of letters using a while loop? 
