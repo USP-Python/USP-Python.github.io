@@ -450,7 +450,7 @@
 <h2 id="windows">Windows</h2>
 <p>Download the latest Python 3 package from the <a href="https://www.python.org/downloads/">official website</a>.
 <center><img alt="Windows Step 1" src="./img/00-win01.png" /></center></p>
-<p>Run the installation with the default configuration. <strong>Take note of where python is being installed</strong>, we will need this later.
+<p>Run the installation with the default configuration. <strong>Take note of where python is being installed</strong>, we will need this later. Take a screenshot of it, or write it down somewhere.
 <center><img alt="Windows Step 2" src="./img/00-win02.png" /></center></p>
 <p>After the installation has completed, we will need to add the python package manager to the system path, in order to install the <em>python-telegram-bot</em> package. First, find the 'advanced system settings' through the control panel. We recommend you use the search function.
 <center><img alt="Windows Step 3" src="./img/00-win03.png" /></center></p>
@@ -459,10 +459,11 @@
 <p>Select the '<em>Path</em>' variable, and click edit.
 <center><img alt="Windows Step 5" src="./img/00-win05.png" /></center></p>
 <p>Click on new. Here, we enter the path to pip3, the Python 3 package manager. The path should look something like this,</p>
-<pre><code>C:\Users\&lt;your_username&gt;\AppData\Local\Programs\Python\Python36-32\Scripts
+<pre><code>C:\Users\&lt;your_username&gt;\AppData\Local\Programs\Python\Python&lt;version-number&gt;\Scripts
 </code></pre>
 
-<p>Remember in the first step when we said to take note of where python is being installed? This is simple the "<em>Scripts</em>" folder of that location. So, from the first step, simply add in <code>"\Scripts"</code>. </p>
+<p><strong>Do not simply copy and paste the above.</strong> Remember in the second step when we said to take note of where python is being installed? This is just the "<em>Scripts</em>" folder within that location. So, from the first step, simply add in <code>"\Scripts"</code>. </p>
+<p><em>(Refer to where Python was installed in the second step. Then, add <code>\Scripts</code> to the end of that.)</em></p>
 <p>Be careful though, as adding in the wrong path will not produce an error in this step. Rather, the later steps will fail. If you want to make sure, you can navigate to the <code>AppData</code> folders by typing in <code>%appdata%</code> in the windows search menu. 
 <center><img alt="Windows Step 6" src="./img/00-win06.png" /></center></p>
 <p>You should have something that looks like this. Press 'OK' on everything, and proceed on to the next step.

@@ -375,20 +375,20 @@
 
 <p>We can access the contents of a list using indices, just like we did for strings. We can also find the length of the list using len. </p>
 <pre><code class="python">my_list = [1, 2, 3, 4, 5]
-number = list[3]    # number == 4
-length = len(list)  # length == 5
+number = my_list[3]    # number == 4
+length = len(my_list)  # length == 5
 </code></pre>
 
-<p>Let's now try writing a function to find the average of the values in a list.</p>
-<pre><code class="python">def average(list):
-    sum = 0
-    for x in list:
-        sum = sum + x
-    result = sum / len(list)
-    return result
+<p>Let's now try writing a program to find the average of the values in a list.</p>
+<pre><code class="python">lst = [1, 2, 3, 4]
+total = 0
+for x in lst:
+    total = total + x
+result = total / len(lst)
+print(result)
 </code></pre>
 
-<p>Now, try writing a function that will find you the largest value in a list. </p>
+<p>Now, try writing a program that will find you the largest value in a list. </p>
 <p>Another useful data structure is called a dictionary.</p>
 <pre><code class="python">my_dict = {'a': 1, 'b': 2, 'c': 3}
 </code></pre>

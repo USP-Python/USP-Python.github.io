@@ -387,8 +387,32 @@ Within the brackets, we specify the parameters or inputs to the function. We use
 
 <p>Functions are an important tool that allows us to organise our code and package sets of instructions which perform a specific task. 
 Once we have defined a function, we will be able to use it in multiple places. We can also use functions that other people have written in our code.</p>
-<p>//give example</p>
-<p>Let's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing that function yourself!</p>
+<p>For example, let's say that we have downloaded some data off an excel file as a list of lists, with each sublist representing a row.</p>
+<pre><code class="python">#input = [[1,2,3,4],[5,6,7,8],[2,3,4,5] ... ]
+</code></pre>
+
+<p>We can use the predefined sum() and max() function in python to find the sum of values in a list. So, we can write a function that takes in this input and finds the maximum value out of all the data. </p>
+<pre><code class="python">def max_val(input):
+    newlst = []
+    for lst in input:
+        newlst = newlst + [sum(lst)]
+    return max(newlst)
+</code></pre>
+
+<p>To consolidate what we've learnt so far, let's try out writing two functions.</p>
+<p>Firstly, suppose we want to write a function freq_dic() that takes in a paragraph and outputs a dictionary of word frequencies. So, each key in the dictionary is a word in the paragraph, and the value is the number of times the word appears in the paragraph. For example, </p>
+<pre><code class="python">para = &quot;the cat on the hat is eating the rat on the mat&quot;
+dic = make_dic(para)
+#dic = {'the': 4, 'cat': 1, 'on': 2, 'hat': 1, 'is': 1, 'eating': 1, 'rat': 1, 'mat': 1}
+</code></pre>
+
+<p>For this exercise, we will use the method .split() to split the paragraph into a list of words. For example:</p>
+<pre><code class="python">string = &quot;I don't eat fish&quot;
+lst = string.split()
+#lst = ['I', &quot;don't&quot;, 'eat', 'fish']
+</code></pre>
+
+<p>Next, let's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing this function find_no_fish() yourself!</p>
 <pre><code class="python">meals = {
     'noodle'    :   'SEAFOOD IPOH HOR FUN',
     'asian'     : '''WHITE &amp; BROWN RICE

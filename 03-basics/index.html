@@ -472,6 +472,19 @@ else:
     print('Hello! Wake up!')
 </code></pre>
 
+<p>There is also the special operator "in" which we can use to check if an element is in a string, list, or dictionary. What does the following program print?</p>
+<pre><code class="python">lst = [1,2,3,4]
+dic = {1 : 2, 3 : 4}
+if 2 not in lst:
+    print(&quot;hi&quot;)
+elif 2 in dic:
+    print(&quot;hello&quot;)
+elif 1 in dic:
+    print(&quot;hallo&quot;)
+else:
+    print(&quot;hey&quot;)
+</code></pre>
+
 <h3 id="the-for-statement">The <code>for</code> Statement</h3>
 <p>A 'for' loop allows the programmer to iterate over a sequence of objects.</p>
 <pre><code class="python">for i in range(1,5)
@@ -502,14 +515,15 @@ crocs
 </code></pre>
 
 <p>Try reading this program to figure out what it does: </p>
-<pre><code class="python">str = &quot;hello&quot;
+<pre><code class="python">string = &quot;hello&quot;
 new_str = &quot;&quot;
-for letter in str:
+for letter in string:
     new_str = letter + new_str
 print(new_str)
 </code></pre>
 
 <p>Basically, it loops through each letter in the string "hello", and at every stage of the loop, we add the letter to the back of the new_str. So, this program reverses the letters in the string.</p>
+<p>Now, try writing a program that finds the largest number in a given list. </p>
 <h3 id="the-while-statement">The <code>while</code> Statement</h3>
 <p><code>while</code> a certain condition is true, the loop continues until the condition turns false. </p>
 <pre><code class="python">num = 88
@@ -528,14 +542,14 @@ while run:
 
 <p>This program uses a while loop to sum up the integers from 1 to 9. </p>
 <pre><code class="python">counter = 0
-sum = 0
+total = 0
 while counter &lt; 10:
-      sum = sum + counter
+      total = total + counter
       counter = counter + 1
-print(sum)
+print(total)
 </code></pre>
 
-<p>In this while loop, "counter &lt; 10" is a condition. So, at every iteration of the loop, the counter is added to sum, and the value of the counter is incremented by 1. When counter becomes 10, the program will break out of the loop and print the value of sum, which is 45. </p>
+<p>In this while loop, "counter &lt; 10" is a condition. So, at every iteration of the loop, the counter is added to total, and the value of the counter is incremented by 1. When counter becomes 10, the program will break out of the loop and print the value of total, which is 45. </p>
 <p>Can you try writing a program to reverse the order of letters using a while loop? </p>
                 
                   
