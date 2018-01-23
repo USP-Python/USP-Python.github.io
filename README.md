@@ -11,6 +11,7 @@ First, clone the directory, and switch to the mkdocs branch.
 ```
 $ git clone git@github.com:USP-Python/USP-Python.github.io.git
 $ cd USP-Python.github.io
+$ git fetch origin mkdocs
 $ git checkout mkdocs
 ```
 
