@@ -82,8 +82,13 @@
         },
         {
             "location": "/06-bot/",
-            "text": "",
+            "text": "Creating a Bot Account\n\n\nFirst, we need to have a telegram account (bot) to access. Talk to \n@Botfather\n, a telegram bot by telegram to create telegram bots, to create a bot.\n\n\nYou will also need to know your own telegram user ID, so the bot knows who to send messages to. Talk to \n@userinfobot\n to get this information.",
             "title": "6. Sending Messages"
+        },
+        {
+            "location": "/06-bot/#creating-a-bot-account",
+            "text": "First, we need to have a telegram account (bot) to access. Talk to  @Botfather , a telegram bot by telegram to create telegram bots, to create a bot.  You will also need to know your own telegram user ID, so the bot knows who to send messages to. Talk to  @userinfobot  to get this information.",
+            "title": "Creating a Bot Account"
         },
         {
             "location": "/07-bot/",
