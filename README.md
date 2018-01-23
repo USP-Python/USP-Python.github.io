@@ -15,6 +15,12 @@ $ git fetch origin mkdocs
 $ git checkout mkdocs
 ```
 
+**Always pull from origin mkdocs to local mkdocs before making any changes.**
+```
+$ git checkout mkdocs
+$ git pull origin mkdocs
+```
+
 You can then make your edits. To preview your changes locally, you will need to install the mkdocs module, as well as the mkdocs-material theme. Then, run the test script.
 ```
 $ pip3 install mkdocs mkdocs-material
