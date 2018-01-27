@@ -1,0 +1,673 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.2">
+    
+    
+      
+        <title>1. Data Types, Operations, and Variables - Intro to Python with Telgeram Bots</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.aa3de92b.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#data-types-and-their-operations" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Intro to Python with Telgeram Bots" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Intro to Python with Telgeram Bots
+              </span>
+              <span class="md-header-nav__topic">
+                1. Data Types, Operations, and Variables
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Intro to Python with Telgeram Bots
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Set-Up" class="md-nav__link">
+      Set-Up
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Basics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Basics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        1. Data Types, Operations, and Variables
+      </label>
+    
+    <a href="./" title="1. Data Types, Operations, and Variables" class="md-nav__link md-nav__link--active">
+      1. Data Types, Operations, and Variables
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-types-and-their-operations" title="Data Types and Their Operations" class="md-nav__link">
+    Data Types and Their Operations
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integers" title="Integers" class="md-nav__link">
+    Integers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings" title="Strings" class="md-nav__link">
+    Strings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#booleans" title="Booleans" class="md-nav__link">
+    Booleans
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02-basics/" title="2. Data Structures" class="md-nav__link">
+      2. Data Structures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03-basics/" title="3. Control Flow" class="md-nav__link">
+      3. Control Flow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-basics/" title="4. Functions" class="md-nav__link">
+      4. Functions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Bot
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Bot
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05-bot/" title="5. Installing Packages" class="md-nav__link">
+      5. Installing Packages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06-bot/" title="6. Sending Messages" class="md-nav__link">
+      6. Sending Messages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07-bot/" title="7. Reacting to Messages" class="md-nav__link">
+      7. Reacting to Messages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../08-bot/" title="8. Sending Commands" class="md-nav__link">
+      8. Sending Commands
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Bonus
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Bonus
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../09-bonus/" title="9. How to Google" class="md-nav__link">
+      9. How to Google
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-types-and-their-operations" title="Data Types and Their Operations" class="md-nav__link">
+    Data Types and Their Operations
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integers" title="Integers" class="md-nav__link">
+    Integers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings" title="Strings" class="md-nav__link">
+    Strings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#booleans" title="Booleans" class="md-nav__link">
+    Booleans
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>1. Data Types, Operations, and Variables</h1>
+                
+                <p>One way to understand programming is as a process of <em>transforming</em> data. A simple calculator performing addition is programmed, for example, to transform two numbers into one.</p>
+<p><center>
+<img alt="Addition" src="../img/01-transform-data.png" />
+</center></p>
+<p>It is therefore necessary to consider,</p>
+<ol>
+<li>Types of data</li>
+<li>Operations on data</li>
+<li>Naming of data</li>
+</ol>
+<h2 id="data-types-and-their-operations">Data Types and Their Operations</h2>
+<p>There are many built-in data types in python<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>. For now, we need only focus on the following,</p>
+<ul>
+<li>Integers (<code>int</code>)</li>
+<li>Strings (<code>str</code>)</li>
+<li>Booleans (<code>bool</code>)</li>
+</ul>
+<h3 id="integers">Integers</h3>
+<p>Integers represent whole numbers, such as 0, 12, 93214, -1, and so on. Try the following, and observe the output,</p>
+<pre><code class="python">&gt;&gt;&gt; 1
+&gt;&gt;&gt; 52
+&gt;&gt;&gt; 0
+&gt;&gt;&gt; -3
+&gt;&gt;&gt; 2 + 6
+&gt;&gt;&gt; 2 - 6
+&gt;&gt;&gt; 2 * 6
+&gt;&gt;&gt; 2 ** 6
+&gt;&gt;&gt; 2 / 6
+&gt;&gt;&gt; 2 // 6
+&gt;&gt;&gt; 2 % 6
+&gt;&gt;&gt; (2 + 6) * 3 / 10
+&gt;&gt;&gt; 2 / 0
+&gt;&gt;&gt; 2 // 0
+</code></pre>
+
+<p>As you may have noticed some familiar <strong>operators</strong>, such as addition (<code>+</code>), subtraction (<code>-</code>), multiplication (<code>*</code>), and division (<code>/</code>). The double asterisks (<code>**</code>) is the 'power' operator, which raises the first number to the power of the second; the double forward slashes (<code>//</code>) is the 'floored division' operator, which divides the first number by the second and gives the answer rounded down. The percent sign (<code>%</code>) is the modulo operator, which gives the remainder of the division of the first number by the second.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> The order of operations apply.</p>
+<p>The last two expressions raises an error, as division by zero is not allowed. </p>
+<pre><code class="python">Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ZeroDivisionError: division by zero
+</code></pre>
+
+<p>Errors in programming are extremely common, but generally harmless. Don't be afraid to run a command and fail! </p>
+<h3 id="strings">Strings</h3>
+<p>Strings are sequences of characters, which can include letters, numbers, and symbols. Strings <em>must</em> be surrounded by either single quotes (<code>'</code>) or double quotes (<code>"</code>).<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> Try the following examples:</p>
+<pre><code class="python">&gt;&gt;&gt; 'abcg'
+&gt;&gt;&gt; '!@#$%&amp;'
+&gt;&gt;&gt; '12347'
+&gt;&gt;&gt; 'abc123'
+&gt;&gt;&gt; 'This is a sentence'
+&gt;&gt;&gt; 'You can use single quotes'
+&gt;&gt;&gt; &quot;or double quotes&quot;
+&gt;&gt;&gt; 'as long as you use the same ones for each string...'
+&gt;&gt;&gt; &quot;There can be 4 mix 0f numbers, and symb*$s!&quot;
+</code></pre>
+
+<p>If you find the IDLE spitting errors, for example,</p>
+<pre><code class="python">&gt;&gt;&gt; 'This is a sentence
+  File &quot;&lt;stdin&gt;&quot;, line 1
+    'This is a sentence
+                      ^
+SyntaxError: EOL while scanning string literal
+</code></pre>
+
+<p>Make sure that you have surrounded both ends of the string with quotation marks, and that for each string you have used the same type of quotation marks.</p>
+<p><strong>Do not confuse an integer with a string</strong>. The integer <code>12</code> is not the same as the string <code>'12'</code>. Integers are representations of a <em>numerical value</em>, while strings are just characters. The integer <code>12</code> represents the quantity <code>12</code>. The string <code>'12'</code> represents the character <code>'1'</code> followed by the character <code>'2'</code>. Superficially, the former is not wrapped with quotation marks, but the latter is.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup></p>
+<p>Like integers, strings can be operated upon. To concatenate<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup> strings, we use the plus (<code>+</code>) operator.</p>
+<pre><code class="python">&gt;&gt;&gt; 'a' + 'b'
+&gt;&gt;&gt; 'a' + 'b' + 'c' + '1' + '!'
+&gt;&gt;&gt; 'hello, ' + 'how are you today' + '?'
+</code></pre>
+
+<h3 id="booleans">Booleans</h3>
+<p>Unlike integers and strings, which may take up any number of values<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>, booleans can only be <code>True</code> or <code>False</code>.</p>
+<pre><code class="python">&gt;&gt;&gt; True
+&gt;&gt;&gt; False
+</code></pre>
+
+<p>As we will see shortly, booleans are <em>absolutely essential</em> in programming. There are three boolean operators which come in the form of words rather than symbols: <code>not</code>, <code>and</code>, <code>or</code>.</p>
+<pre><code class="python">&gt;&gt;&gt; not True
+&gt;&gt;&gt; not False
+&gt;&gt;&gt; False and False
+&gt;&gt;&gt; True and False
+&gt;&gt;&gt; True and True
+&gt;&gt;&gt; False or False
+&gt;&gt;&gt; True or False
+&gt;&gt;&gt; True or True
+&gt;&gt;&gt; not (not True or (False and not True))
+</code></pre>
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>For the curious, see the <a href="https://docs.python.org/3.6/library/stdtypes.html">docs</a>.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>I use the term 'number' here, instead of integer, as these operations can also apply to other data types, including other representations of numbers.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Which type of quotation marks you use depends on your preference, and sometimes the context. <a href="https://www.codecademy.com/en/forum_questions/5375491180ff33f9370002c7">Here</a> is a decent forum post on this issue.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Don't worry if this doesn't yet make sense to you. It's may be rather counter-intuitive at first.&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>To connect or combine&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>...which may <em>virtually</em> take up any number of values...&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Set-Up" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Set-Up
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../02-basics/" title="2. Data Structures" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                2. Data Structures
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.f041762f.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
