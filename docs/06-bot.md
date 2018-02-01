@@ -9,7 +9,7 @@ You will also need to know your own telegram user ID, so the bot knows who to se
 
 <center>![@userinfobot](img/06-userinfobot.png)</center>
 
-Finally, before we start writing code, we have to `/start` our bot.
+Finally, before we start writing code, we have to `/start` our bot. Open up a private message with your bot by searching its username, then hit the start button. Don't worry, nothing's supposed to happen.
 
 <center>![Your bot](img/06-yourbot.png)</center>
 
@@ -54,6 +54,7 @@ The only difference is that we must use the `argument_name=argument_value` notat
 [^4]: We have been using _positional_ arguments. These are _keyword_ arguments. [Read more?](https://stackoverflow.com/a/1419160/6910451)
 
 ## Checkpoint
+If your program doesn't seem to work, check that it looks something like this:
 
 ```python
 import telegram
@@ -64,6 +65,10 @@ user_id = '<your user id here>'
 bot = telegram.Bot(token=api_key)
 bot.send_message(chat_id=user_id, text='USP-Python has started up!')
 ```
+
+Take note of the error message, particularly which line the error originates from. Then, compare that line in your program to a matching line above. Are there any differences? If so, what are the differences exactly? Amend your program so the lines match. Did that fix the error? If it did, why?
+
+If your program works, leave it as it is---it doesn't have to be an exact match! 
 
 ## Questions & Exercises
 
