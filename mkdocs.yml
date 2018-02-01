@@ -16,7 +16,7 @@ pages:
     - Bot:
         - 5. Installing Packages: 05-bot.md
         - 6. Sending Messages: 06-bot.md
-        - 7. Reacting to Messages: 07-bot.md
-        - 8. Sending Commands: 08-bot.md
+        - 7. Reacting to Commands: 07-bot.md
+        - 8. Reacting to Messages: 08-bot.md
     - Bonus:
         - 9. How to Google: 09-bonus.md
