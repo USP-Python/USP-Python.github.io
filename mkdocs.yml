@@ -3,6 +3,9 @@ theme:
     name: 'material'
 markdown_extensions:
     - footnotes
+extra_javascript: 
+    - js/jquery-3.3.1.min.js
+    - js/lib.js
 pages:
     - Set-Up: index.md
     - Basics:
