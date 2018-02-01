@@ -474,7 +474,7 @@
 <p><center><img alt="@botfather" src="../img/06-botfather.png" /></center></p>
 <p>You will also need to know your own telegram user ID, so the bot knows who to send messages to. Talk to <a href="https://t.me/userinfobot">@userinfobot</a> to get this information. Once again, copy this information down somewhere.</p>
 <p><center><img alt="@userinfobot" src="../img/06-userinfobot.png" /></center></p>
-<p>Finally, before we start writing code, we have to <code>/start</code> our bot.</p>
+<p>Finally, before we start writing code, we have to <code>/start</code> our bot. Open up a private message with your bot by searching its username, then hit the start button. Don't worry, nothing's supposed to happen.</p>
 <p><center><img alt="Your bot" src="../img/06-yourbot.png" /></center></p>
 <h2 id="sending-a-message-part-1">Sending a Message, Part 1</h2>
 <p>Now, let's write our program. In the first few lines, we need to import the telegram library, and store our HTTP API and user ID in some variables.</p>
@@ -502,6 +502,7 @@ user_id = '&lt;your user id here&gt;'
 </ul>
 <p>The only difference is that we must use the <code>argument_name=argument_value</code> notation.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup></p>
 <h2 id="checkpoint">Checkpoint</h2>
+<p>If your program doesn't seem to work, check that it looks something like this:</p>
 <pre><code class="python">import telegram
 
 api_key = '&lt;your api key here&gt;'
@@ -511,6 +512,8 @@ bot = telegram.Bot(token=api_key)
 bot.send_message(chat_id=user_id, text='USP-Python has started up!')
 </code></pre>
 
+<p>Take note of the error message, particularly which line the error originates from. Then, compare that line in your program to a matching line above. Are there any differences? If so, what are the differences exactly? Amend your program so the lines match. Did that fix the error? If it did, why?</p>
+<p>If your program works, leave it as it is---it doesn't have to be an exact match! </p>
 <h2 id="questions-exercises">Questions &amp; Exercises</h2>
 <ol>
 <li>What is the type of <code>api_key</code> and <code>user_id</code>?<br />
