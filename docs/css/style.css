@@ -1,0 +1,8 @@
+.toggle_answer {
+    font-style: italic;
+}
+
+.answer {
+    text-decoration: underline;
+    color: #6b6b6b;
+}
