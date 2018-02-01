@@ -28,7 +28,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.2">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.1">
     
     
       
@@ -295,8 +295,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../07-bot/" title="7. Reacting to Messages" class="md-nav__link">
-      7. Reacting to Messages
+    <a href="../07-bot/" title="7. Reacting to Commands" class="md-nav__link">
+      7. Reacting to Commands
     </a>
   </li>
 
@@ -307,8 +307,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../08-bot/" title="8. Sending Commands" class="md-nav__link">
-      8. Sending Commands
+    <a href="../08-bot/" title="8. Reacting to Messages" class="md-nav__link">
+      8. Reacting to Messages
     </a>
   </li>
 
@@ -387,22 +387,8 @@ Within the brackets, we specify the parameters or inputs to the function. We use
 
 <p>Functions are an important tool that allows us to organise our code and package sets of instructions which perform a specific task. 
 Once we have defined a function, we will be able to use it in multiple places. We can also use functions that other people have written in our code.</p>
-<p>For example, let's say that we have downloaded some data off an excel file (csv file) named "numbers.csv" as a list of lists, with each sublist representing a row.</p>
-<pre><code class="python">import csv
-
-# A function that we can use to read in any csv file
-def readcsv(filename):
-    output = []
-    with open(filename) as file:
-        data = csv.reader(file)
-        for row in data:
-            output.append(row)
-    return output
-
-output = readcsv(&quot;numbers.csv&quot;)
-
-#Notice you don't need to know how the function works to use it. You only need to knwo what to input, and what it does, which it read off a csv file such that:
-#output = [[1,2,3,4],[5,6,7,8],[2,3,4,5] ... ]
+<p>For example, let's say that we have downloaded some data off an excel file as a list of lists, with each sublist representing a row.</p>
+<pre><code class="python">#input = [[1,2,3,4],[5,6,7,8],[2,3,4,5] ... ]
 </code></pre>
 
 <p>We can use the predefined sum() and max() function in python to find the sum of values in a list. So, we can write a function that takes in this input and finds the maximum value out of all the data. </p>
@@ -410,14 +396,13 @@ output = readcsv(&quot;numbers.csv&quot;)
     newlst = []
     for lst in input:
         newlst = newlst + [sum(lst)]
-        # A more convenient way to write this is: newlst.append(sum(lst))
     return max(newlst)
 </code></pre>
 
 <p>To consolidate what we've learnt so far, let's try out writing two functions.</p>
 <p>Firstly, suppose we want to write a function freq_dic() that takes in a paragraph and outputs a dictionary of word frequencies. So, each key in the dictionary is a word in the paragraph, and the value is the number of times the word appears in the paragraph. For example, </p>
 <pre><code class="python">para = &quot;the cat on the hat is eating the rat on the mat&quot;
-dic = freq_dic(para)
+dic = make_dic(para)
 #dic = {'the': 4, 'cat': 1, 'on': 2, 'hat': 1, 'is': 1, 'eating': 1, 'rat': 1, 'mat': 1}
 </code></pre>
 
@@ -427,7 +412,7 @@ lst = string.split()
 #lst = ['I', &quot;don't&quot;, 'eat', 'fish']
 </code></pre>
 
-<p>Next, let's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing this function find_no_fish(dict) yourself!</p>
+<p>Next, let's say we download some data off a website and get this dictionary. We want to find all the choices that don't have fish in the menu. Try writing this function find_no_fish() yourself!</p>
 <pre><code class="python">meals = {
     'noodle'    :   'SEAFOOD IPOH HOR FUN',
     'asian'     : '''WHITE &amp; BROWN RICE
@@ -524,9 +509,13 @@ lst = string.split()
       
     </div>
     
-      <script src="../assets/javascripts/application.f041762f.js"></script>
+      <script src="../assets/javascripts/application.ed2cc613.js"></script>
       
       <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
+      
+        <script src="../js/jquery-3.3.1.min.js"></script>
+      
+        <script src="../js/lib.js"></script>
       
     
     

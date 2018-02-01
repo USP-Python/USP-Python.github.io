@@ -28,7 +28,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.2">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.1">
     
     
       
@@ -309,6 +309,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sending-a-message-part-1" title="Sending a Message, Part 1" class="md-nav__link">
+    Sending a Message, Part 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" title="Checkpoint" class="md-nav__link">
+    Checkpoint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-exercises" title="Questions &amp; Exercises" class="md-nav__link">
+    Questions &amp; Exercises
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -324,8 +345,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../07-bot/" title="7. Reacting to Messages" class="md-nav__link">
-      7. Reacting to Messages
+    <a href="../07-bot/" title="7. Reacting to Commands" class="md-nav__link">
+      7. Reacting to Commands
     </a>
   </li>
 
@@ -336,8 +357,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../08-bot/" title="8. Sending Commands" class="md-nav__link">
-      8. Sending Commands
+    <a href="../08-bot/" title="8. Reacting to Messages" class="md-nav__link">
+      8. Reacting to Messages
     </a>
   </li>
 
@@ -408,6 +429,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sending-a-message-part-1" title="Sending a Message, Part 1" class="md-nav__link">
+    Sending a Message, Part 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" title="Checkpoint" class="md-nav__link">
+    Checkpoint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-exercises" title="Questions &amp; Exercises" class="md-nav__link">
+    Questions &amp; Exercises
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -426,8 +468,72 @@
                   <h1>6. Sending Messages</h1>
                 
                 <h2 id="creating-a-bot-account">Creating a Bot Account</h2>
-<p>First, we need to have a telegram account (bot) to access. Talk to <a href="https://t.me/botfather">@Botfather</a>, a telegram bot by telegram to create telegram bots, to create a bot.</p>
-<p>You will also need to know your own telegram user ID, so the bot knows who to send messages to. Talk to <a href="https://t.me/userinfobot">@userinfobot</a> to get this information.</p>
+<p>First, we need to have a telegram account (bot) to access. Talk to <a href="https://t.me/botfather">@Botfather</a>, a telegram bot by telegram to create telegram bots, to create a bot. Copy and paste the HTTP API somewhere.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></p>
+<p><center><img alt="@botfather" src="../img/06-botfather.png" /></center></p>
+<p>You will also need to know your own telegram user ID, so the bot knows who to send messages to. Talk to <a href="https://t.me/userinfobot">@userinfobot</a> to get this information. Once again, copy this information down somewhere.</p>
+<p><center><img alt="@userinfobot" src="../img/06-userinfobot.png" /></center></p>
+<p>Finally, before we start writing code, we have to <code>/start</code> our bot.</p>
+<p><center><img alt="Your bot" src="../img/06-yourbot.png" /></center></p>
+<h2 id="sending-a-message-part-1">Sending a Message, Part 1</h2>
+<p>Now, let's write our program. In the first few lines, we need to import the telegram library, and store our HTTP API and user ID in some variables.</p>
+<pre><code class="python">import telegram
+
+api_key = '&lt;your api key here&gt;'
+user_id = '&lt;your user id here&gt;'
+</code></pre>
+
+<p>Now, we need to store a <em>representation</em> of the telegram bot into a variable. After this, we will be able to use that variable to tell our bot what to do. Use the <code>Bot</code> <em>method</em> of the <code>telegram</code> library like so, passing the HTTP API <code>api_key</code> as argument<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>.</p>
+<pre><code class="python">bot = telegram.Bot(token=api_key)
+</code></pre>
+
+<p>Finally, we are ready to send a message from our bot. Use the <code>send_message</code> method, with appropriate arguments to tell the bot where to send the message to (<code>chat_id</code>), and what to say (<code>text</code>).</p>
+<pre><code class="python">bot.send_message(chat_id=user_id, text='USP-Python has started up!')
+</code></pre>
+
+<p>Save your file, and run the program.</p>
+<p><center><img alt="Sent!" src="../img/06-sent.png" /></center></p>
+<p>Don't be intimidated by these methods! They work like functions do:</p>
+<ul>
+<li>They have a name, such as <code>telegram.Bot</code>, or <code>bot.send_message</code><sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup></li>
+<li>They have rounded brackets right after their name...</li>
+<li>and within these brackets are arguments such as <code>chat_id=user_id</code></li>
+</ul>
+<p>The only difference is that we must use the <code>argument_name=argument_value</code> notation.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup></p>
+<h2 id="checkpoint">Checkpoint</h2>
+<pre><code class="python">import telegram
+
+api_key = '&lt;your api key here&gt;'
+user_id = '&lt;your user id here&gt;'
+
+bot = telegram.Bot(token=api_key)
+bot.send_message(chat_id=user_id, text='USP-Python has started up!')
+</code></pre>
+
+<h2 id="questions-exercises">Questions &amp; Exercises</h2>
+<ol>
+<li>What is the type of <code>api_key</code> and <code>user_id</code>?<br />
+<a class='toggle_answer' id='06q1'></a> 
+<span class='answer' id='06q1a'>They are strings.</span></li>
+<li>Modify your program so that it sends a second message of your liking.</li>
+<li>Modify your program so that it sends a message to someone else.</li>
+</ol>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>And keep it private! This is analogous to a password---anyone with this string of characters can access your bot.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Methods are similar to functions. We are in fact using the <code>Bot</code> method (function) to <em>construct</em> a <code>Bot</code> object, which we store in the variable <code>bot</code>. This <code>Bot</code> object further has methods which will allow us to do things like send messages, photos, videos...&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Or, the <code>Bot</code> method of the module <code>telegram</code>, and <code>send_message</code> of the object <code>bot</code>, if you want to be <em>technically</em> precise.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>We have been using <em>positional arguments</em>. These are <em>keyword arguments</em>. <a href="https://stackoverflow.com/a/1419160/6910451">Read more?</a>&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
                   
                 
@@ -461,13 +567,13 @@
           </a>
         
         
-          <a href="../07-bot/" title="7. Reacting to Messages" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../07-bot/" title="7. Reacting to Commands" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                7. Reacting to Messages
+                7. Reacting to Commands
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -497,9 +603,13 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.f041762f.js"></script>
+      <script src="../assets/javascripts/application.ed2cc613.js"></script>
       
       <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
+      
+        <script src="../js/jquery-3.3.1.min.js"></script>
+      
+        <script src="../js/lib.js"></script>
       
     
     
