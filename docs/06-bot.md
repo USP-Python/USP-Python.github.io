@@ -51,7 +51,7 @@ Don't be intimidated by these methods! They work like functions do:
 
 The only difference is that we must use the `argument_name=argument_value` notation.[^4]
 
-[^4]: We have been using _positional arguments_. These are _keyword arguments_. [Read more?](https://stackoverflow.com/a/1419160/6910451)
+[^4]: We have been using _positional_ arguments. These are _keyword_ arguments. [Read more?](https://stackoverflow.com/a/1419160/6910451)
 
 ## Checkpoint
 
