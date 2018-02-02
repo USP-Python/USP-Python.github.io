@@ -40,9 +40,7 @@ def readcsv(filename):
 
 output = readcsv("numbers.csv")
 
-
-
-#Notice you don't need to know how the function works to use it. You only need to knwo what to input, and what it does, which it read off a csv file such that:
+#Notice you don't need to know how the function works to use it. You only need to know what to input, and what it does, which is read off a csv file such that:
 #output = [[1,2,3,4],[5,6,7,8],[2,3,4,5] ... ]
 ```
 
