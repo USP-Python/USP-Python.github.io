@@ -4,24 +4,14 @@ A data structure is something we use to store values. A list is an important in-
 my_list = [1, 2, 3, 4, 5]
 ```
 
-We can access the contents of a list using indices, just like we did for strings. We can also find the length of the list using len. 
+We can access the contents of a list using indices, just like we did for strings. Remember that we start counting from 0. We can also find the length of the list using len. Lastly, we can also slice a list to retrieve a smaller portion of the list by using [start:end], where start is the starting index (inclusive), and end is the ending index (non-inclusive).
 
 ```python
 my_list = [1, 2, 3, 4, 5]
 number = my_list[3]    # number == 4
 length = len(my_list)  # length == 5
+new_list = my_list[2:4] # new_list = [3,4]
 ```
-Let's now try writing a program to find the average of the values in a list.
-
-```python
-lst = [1, 2, 3, 4]
-total = 0
-for x in lst:
-    total = total + x
-result = total / len(lst)
-print(result)
-```
-Now, try writing a program that will find you the largest value in a list. 
 
 Another useful data structure is called a dictionary.
 
