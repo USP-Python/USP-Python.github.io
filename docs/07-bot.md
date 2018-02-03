@@ -18,7 +18,7 @@ def start(bot, update):
 Next, we have to create a CommandHandler and then add it to the dispatcher. 
 
 ```python
-from telegram import CommandHandler
+from telegram.ext import CommandHandler
 start_handler = CommandHandler("start", start)
 #create a CommandHandler that responds to the command "/start" and runs the function start
 dispatcher.add_handler(start_handler)
