@@ -22,21 +22,15 @@ Firstly, let's try to create a MessageHandler that will send a message "FOOD!!" 
 
 ```python
 food_list = ["fish", "rice", "sushi"]
-```
 
-Remember that in order to access a variable outside functions we should use the keyword "global". 
-
-```python
 def find_food(bot, update):
     words = update.message.text.split()
-    global food_list
     for i in words:
         if i in food_list:
             bot.send_message(chat_id = update.message.chat_id, text = "FOOD!!")
 ```
 
-Next, let's write a MessageHandler that reverses the words in your message and echoes it back, with a ", haha <person's name>" at the back. 
-So for example, if John writes "Colourless green ideas sleep furiously" in the chat, the bot should say "furiously sleep ideas green Colourless, haha John".
+Next, let's write a MessageHandler that reverses the words in your message and echoes it back, with a ", haha &lt;person's name&gt;" at the back. So for example, if John writes "Colourless green ideas sleep furiously" in the chat, the bot should say "furiously sleep ideas green Colourless, haha John".
 
 ```python
 def reverse(bot, update):
