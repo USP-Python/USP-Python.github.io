@@ -371,7 +371,41 @@
                 
                   <h1>8. Reacting to Messages</h1>
                 
-                
+                <p>Let's now learn how to create a MessageHandler that responds not to commands, but to all messages.</p>
+<p>As before, we have to define a function which we use to create a MessageHandler. </p>
+<pre><code class="python">def echo(bot, update):
+    bot.send_message(chat_id = update.message.chat_id, text = update.message.text)
+    # text = update.message.text here because we want to retrieve the text from the original message and send the same thing back
+
+from telegram.ext import MessageHandler, Filters
+echo_handler = MessageHandler(Filters.text, echo)
+# instead of a string to specify a command name, now we use Filters.text to filter out all text based messages
+dispatcher.add_handler(echo_handler)
+</code></pre>
+
+<p>Start polling the updater with updater.start_polling(), and your bot should now echo everything you say back to you.</p>
+<p>This isn't very interesting, unless your goal is to spam a group (in which case they will have your bot removed immediately). 
+So let's try to add some "interesting" functionality.</p>
+<p>Firstly, let's try to create a MessageHandler that will send a message "FOOD!!" everytime someone mentions a food. For this, we will assume that we have a list of food that involves only 3 items:</p>
+<pre><code class="python">food_list = [&quot;fish&quot;, &quot;rice&quot;, &quot;sushi&quot;]
+
+def find_food(bot, update):
+    words = update.message.text.split()
+    for i in words:
+        if i in food_list:
+            bot.send_message(chat_id = update.message.chat_id, text = &quot;FOOD!!&quot;)
+</code></pre>
+
+<p>Next, let's write a MessageHandler that reverses the words in your message and echoes it back, with a ", haha &lt;person's name&gt;" at the back. So for example, if John writes "Colourless green ideas sleep furiously" in the chat, the bot should say "furiously sleep ideas green Colourless, haha John".</p>
+<pre><code class="python">def reverse(bot, update):
+    words = update.message.text.split()
+    output = &quot;&quot;
+    for i in words:
+        output = &quot; &quot; + i + output
+    output = output[1:]
+    output = output + &quot;, haha &quot; + update.message.from_user.first_name
+    bot.send_message(chat_id = update.message.chat_id, text = output)
+</code></pre>
                 
                   
                 

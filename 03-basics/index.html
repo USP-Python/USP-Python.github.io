@@ -258,13 +258,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#the-while-statement" title="The while Statement" class="md-nav__link">
-    The while Statement
-  </a>
-  
-</li>
-      
       
       
     </ul>
@@ -431,13 +424,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#the-while-statement" title="The while Statement" class="md-nav__link">
-    The while Statement
-  </a>
-  
-</li>
-      
       
       
     </ul>
@@ -455,7 +441,7 @@
                 
                   <h1>3. Control Flow</h1>
                 
-                <p>Similar to how you would read a script, Python reads in a top-down order. You, the scriptwriter, are able to control how Python reads and execute the script. </p>
+                <p>Similar to how you would read a script, Python reads in a top-down order. You, the scriptwriter, are able to control how Python reads and execute the script.</p>
 <p>This is achieved using <em>control flow</em> statements. There are 3 common control flow statements in Python,</p>
 <ol>
 <li><code>if</code></li>
@@ -466,7 +452,7 @@
 <p>Simply put, <code>if</code> a certain condition is <code>true</code>, Python runs the block of statement in the <code>if</code>-block, <em>else</em> it runs the statements in the <code>else</code>-block. The <code>else</code> clause is optional.</p>
 <pre><code class="python">grade = input('Enter your grade: ')
 
-if grades &gt;= 85: 
+if grades &gt;= 85:
     print('Great job!')
 elif grades &gt;= 50:
     print('Study harder!')
@@ -516,43 +502,14 @@ eagles
 crocs
 </code></pre>
 
-<p>Try reading this program to figure out what it does: </p>
-<pre><code class="python">string = &quot;hello&quot;
-new_str = &quot;&quot;
-for letter in string:
-    new_str = letter + new_str
-print(new_str)
-</code></pre>
-
-<p>Basically, it loops through each letter in the string "hello", and at every stage of the loop, we add the letter to the back of the new_str. So, this program reverses the letters in the string.</p>
-<p>Now, try writing a program that finds the largest number in a given list. </p>
-<h3 id="the-while-statement">The <code>while</code> Statement</h3>
-<p><code>while</code> a certain condition is true, the loop continues until the condition turns false. </p>
-<pre><code class="python">num = 88
-run = True
-
-while run:
-    guess = input('Enter your guess: ')
-    if guess &lt; num:
-        print('The answer is higher')
-    elif guess &gt; num:
-        print('The answer is lower')
-    elif guess == num:
-        print('That's right!')
-        run = False
-</code></pre>
-
-<p>This program uses a while loop to sum up the integers from 1 to 9. </p>
-<pre><code class="python">counter = 0
+<p>Let's now try writing a program to find the average of the values in a list.</p>
+<pre><code class="python">lst = [1, 2, 3, 4]
 total = 0
-while counter &lt; 10:
-      total = total + counter
-      counter = counter + 1
-print(total)
+for x in lst:
+    total = total + x
+result = total / len(lst)
+print(result)
 </code></pre>
-
-<p>In this while loop, "counter &lt; 10" is a condition. So, at every iteration of the loop, the counter is added to total, and the value of the counter is incremented by 1. When counter becomes 10, the program will break out of the loop and print the value of total, which is 45. </p>
-<p>Can you try writing a program to reverse the order of letters using a while loop? </p>
                 
                   
                 
