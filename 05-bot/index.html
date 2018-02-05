@@ -72,6 +72,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#pip-install" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -322,9 +326,41 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        5. Installing Packages
+      </label>
+    
     <a href="./" title="5. Installing Packages" class="md-nav__link md-nav__link--active">
       5. Installing Packages
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pip-install" title="pip install" class="md-nav__link">
+    pip install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-a-packagemodule" title="Installing a Package/Module" class="md-nav__link">
+    Installing a Package/Module
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -413,6 +449,40 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pip-install" title="pip install" class="md-nav__link">
+    pip install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-a-packagemodule" title="Installing a Package/Module" class="md-nav__link">
+    Installing a Package/Module
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -423,7 +493,37 @@
                 
                   <h1>5. Installing Packages</h1>
                 
-                
+                <p>The Python language comes with a wide array of packages. These packages (aka modules) contains pre-built functions available to the user just by <code>import</code>-ing. These packages are developed and maintained by a large group of active and supportive contributors. These packages are available to all Python developers to use under open source license terms. There are currently 128606 packages available to date. You may refer to this <a href="https://pythontips.com/2013/07/30/20-python-libraries-you-cant-live-without/">website</a> for popular Python packages. </p>
+<h3 id="pip-install"><code>pip install</code></h3>
+<p><code>pip</code> is the preferred installer program and starting with Python 3.4, it is included by default together with Python binary installers. </p>
+<p>You can check whether pip is installed or check its current version through your terminal. Simply type the following:</p>
+<pre><code>pip --version
+</code></pre>
+
+<p>You should get the following response:</p>
+<pre><code>pip 9.0.1 from c:\users\...\python\python36\lib\site-packages (python 3.6)
+</code></pre>
+
+<p>For Windows: 
+In the event that pip is not installed, save this folder: <a href="https://bootstrap.pypa.io/get-pip.py">get-pip.py</a></p>
+<p>For Mac:
+Enter the following in the terminal:</p>
+<pre><code>sudo easy-install pip
+</code></pre>
+
+<p>Double click on the file. Your local Python interpreter would run the file and install pip. After doing so, check whether pip is installed by running the above command again. </p>
+<h3 id="installing-a-packagemodule">Installing a Package/Module</h3>
+<p>To install any Python package, simply open your terminal and run the following command:</p>
+<pre><code>pip install module_name
+</code></pre>
+
+<p>For this workshop we will be using the <code>python-telegram-bot</code> package, so we will key in the following:</p>
+<pre><code>pip install python-telegram-bot
+</code></pre>
+
+<p>You can check all installed packages and the respective version by running the following commands:</p>
+<pre><code>pip list
+</code></pre>
                 
                   
                 

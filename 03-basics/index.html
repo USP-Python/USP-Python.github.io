@@ -501,8 +501,8 @@
 <li><code>while</code></li>
 </ol>
 <h3 id="the-if-statement">The <code>if</code> Statement</h3>
-<p>Simply put, <code>if</code> a certain condition is <code>true</code>, Python runs the block of statement in the <code>if</code>-block, <em>else</em> it runs the statements in the <code>else</code>-block. The <code>else</code> clause is optional.</p>
-<pre><code class="python">grade = input('Enter your grade: ')
+<p>Simply put, <code>if</code> a certain condition is <code>true</code>, Python runs the block of statement in the <code>if</code>-block, <code>else</code> it runs the statements in the <code>else</code>-block. The <code>else</code> clause is optional.</p>
+<pre><code class="python">grade = int(input('Enter your grade: '))
 
 if grades &gt;= 85:
     print('Great job!')
@@ -512,21 +512,21 @@ else:
     print('Hello! Wake up!')
 </code></pre>
 
-<p>There is also the special operator "in" which we can use to check if an element is in a string, list, or dictionary. What does the following program print?</p>
-<pre><code class="python">lst = [1, 2, 3, 4]
-dic = {'two': 2, 'four': 4}
-if 2 not in lst:
+<p>There is also the special operator <code>in</code> which we can use to check if an element is in a string, list, or dictionary. What does the following program print?</p>
+<pre><code class="python">my_list = [1, 2, 3, 4]
+my_dict = {'two': 2, 'four': 4}
+if 2 not in my_list:
     print(&quot;hi&quot;)
-elif 2 in dic:
+elif 2 in my_dict:
     print(&quot;hello&quot;)
-elif 1 in dic:
+elif 1 in my_dict:
     print(&quot;hallo&quot;)
 else:
     print(&quot;hey&quot;)
 </code></pre>
 
 <h3 id="the-for-statement">The <code>for</code> Statement</h3>
-<p>A 'for' loop allows the programmer to iterate over a sequence of objects.</p>
+<p>A <code>for</code> loop allows the programmer to iterate over a sequence of objects.</p>
 <pre><code class="python">for i in range(1,5):
     print(i)
 print('End')
@@ -543,8 +543,8 @@ End
 <p>It can also be use to iterate through a list.</p>
 <pre><code class="python">my_pets = ['lions', 'tigers', 'eagles', 'crocs']
 
-for pets in my_pets:
-    print(pets)
+for pet in my_pets:
+    print(pet)
 </code></pre>
 
 <p>Output</p>
@@ -555,11 +555,11 @@ crocs
 </code></pre>
 
 <p>Let's now try writing a program to find the average of the values in a list.</p>
-<pre><code class="python">lst = [1, 2, 3, 4]
+<pre><code class="python">my_list = [1, 2, 3, 4]
 total = 0
-for x in lst:
+for x in my_list:
     total = total + x
-result = total / len(lst)
+result = total / len(my_list)
 print(result)
 </code></pre>
                 
