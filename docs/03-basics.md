@@ -75,10 +75,10 @@ crocs
 Let's now try writing a program to find the average of the values in a list.
 
 ```python
-mylist = [1, 2, 3, 4]
+my_list = [1, 2, 3, 4]
 total = 0
-for x in mylist:
+for x in my_list:
     total = total + x
-result = total / len(lst)
+result = total / len(my_list)
 print(result)
 ```
