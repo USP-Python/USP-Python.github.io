@@ -4,7 +4,7 @@ As before, we have to define a function which we use to create a MessageHandler.
 
 ```python
 def echo(bot, update):
-    bot.send_message(chat_id = update.message.chat_id, text = update.message.text)
+    bot.send_message(chat_id=update.message.chat_id, text=update.message.text)
     # text = update.message.text here because we want to retrieve the text from the original message and send the same thing back
 
 from telegram.ext import MessageHandler, Filters
@@ -27,7 +27,7 @@ def find_food(bot, update):
     words = update.message.text.split()
     for i in words:
         if i in food_list:
-            bot.send_message(chat_id = update.message.chat_id, text = "FOOD!!")
+            bot.send_message(chat_id=update.message.chat_id, text="FOOD!!")
 ```
 
 Next, let's write a MessageHandler that reverses the words in your message and echoes it back, with a ", haha &lt;person's name&gt;" at the back. So for example, if John writes "Colourless green ideas sleep furiously" in the chat, the bot should say "furiously sleep ideas green Colourless, haha John".
@@ -40,5 +40,5 @@ def reverse(bot, update):
         output = " " + i + output
     output = output[1:]
     output = output + ", haha " + update.message.from_user.first_name
-    bot.send_message(chat_id = update.message.chat_id, text = output)
+    bot.send_message(chat_id=update.message.chat_id, text=output)
 ```

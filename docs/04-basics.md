@@ -1,6 +1,6 @@
 ```python
 def sum(x, y):
-    return x+y
+    return x + y
 ```
 
 This is a function. We use the keyword "def" to start off the function, followed by the name of the function (in this case, "sum").
@@ -9,7 +9,7 @@ Within the brackets, we specify the parameters or inputs to the function. We use
 To use a function, or perform what we call a function call, we could write:
 
 ```python
-a = sum(3,4)
+a = sum(3, 4)
 ```
 
 This assigns the value of sum(3,4), which is 7, to the variable a.
@@ -17,7 +17,7 @@ This assigns the value of sum(3,4), which is 7, to the variable a.
 Unlike in maths, however, functions in python do not need to have inputs and outputs. So, this is also a valid function:
 
 ```python
-def sayhi():
+def say_hi():
     print("hi")
 ```
 
@@ -40,8 +40,8 @@ def readcsv(filename):
 
 output = readcsv("numbers.csv")
 
-#Notice you don't need to know how the function works to use it. You only need to know what to input, and what it does, which is read off a csv file such that:
-#output = [[1,2,3,4],[5,6,7,8],[2,3,4,5] ... ]
+# Notice you don't need to know how the function works to use it. You only need to know what to input, and what it does, which is read off a csv file such that:
+# output = [ [1,2,3,4], [5,6,7,8], [2,3,4,5], ... ]
 ```
 
 We can use the predefined sum() and max() function in python to find the sum of values in a list. So, we can write a function that takes in this input and finds the maximum value out of all the data.
@@ -61,14 +61,14 @@ Firstly, suppose we want to write a function freq_dic() that takes in a paragrap
 ```python
 para = "the cat on the hat is eating the rat on the mat"
 dic = freq_dic(para)
-#dic = {'the': 4, 'cat': 1, 'on': 2, 'hat': 1, 'is': 1, 'eating': 1, 'rat': 1, 'mat': 1}
+# dic = {'the': 4, 'cat': 1, 'on': 2, 'hat': 1, 'is': 1, 'eating': 1, 'rat': 1, 'mat': 1}
 ```
 For this exercise, we will use the method .split() to split the paragraph into a list of words. For example:
 
 ```python
 string = "I don't eat fish"
 lst = string.split()
-#lst = ['I', "don't", 'eat', 'fish']
+# lst = ['I', "don't", 'eat', 'fish']
 ```
 
 Solution:
@@ -79,7 +79,7 @@ def freq_dic(para):
     for w in words:
         if w not in dic:
             dic[w] = 0
-        dic[w] += 1 #dic[w] = dic[w] + 1
+        dic[w] += 1  # dic[w] = dic[w] + 1
     return dic
 ```
 

@@ -23,8 +23,8 @@ else:
 There is also the special operator "in" which we can use to check if an element is in a string, list, or dictionary. What does the following program print?
 
 ```python
-lst = [1,2,3,4]
-dic = {1 : 2, 3 : 4}
+lst = [1, 2, 3, 4]
+dic = {'two': 2, 'four': 4}
 if 2 not in lst:
     print("hi")
 elif 2 in dic:
@@ -39,7 +39,7 @@ else:
 A 'for' loop allows the programmer to iterate over a sequence of objects.
 
 ```python
-for i in range(1,5)
+for i in range(1,5):
     print(i)
 print('End')
 ```

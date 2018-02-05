@@ -8,9 +8,9 @@ We can access the contents of a list using indices, just like we did for strings
 
 ```python
 my_list = [1, 2, 3, 4, 5]
-number = my_list[3]    # number == 4
-length = len(my_list)  # length == 5
-new_list = my_list[2:4] # new_list = [3,4]
+number = my_list[3]      # number = 4
+length = len(my_list)    # length = 5
+new_list = my_list[2:4]  # new_list = [3, 4]
 ```
 
 Another useful data structure is called a dictionary.
@@ -22,7 +22,7 @@ A dictionary contains entries which are key-value pairs. In the example above, a
 
 ```python
 my_dict = {'a': 1, 'b': 2, 'c': 3}
-number = dic['b']  # number == 2
+number = dic['b']  # number = 2
 ```
 
 We can also add an entry to the dictionary as such:
