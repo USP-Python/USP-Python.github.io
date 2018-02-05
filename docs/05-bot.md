@@ -45,5 +45,5 @@ pip install python-telegram-bot
 You can check all installed packages and the respective version by running the following commands:
 
 ```
-pip freeze
+pip list
 ```
