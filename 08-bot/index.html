@@ -374,7 +374,7 @@
                 <p>Let's now learn how to create a MessageHandler that responds not to commands, but to all messages.</p>
 <p>As before, we have to define a function which we use to create a MessageHandler. </p>
 <pre><code class="python">def echo(bot, update):
-    bot.send_message(chat_id = update.message.chat_id, text = update.message.text)
+    bot.send_message(chat_id=update.message.chat_id, text=update.message.text)
     # text = update.message.text here because we want to retrieve the text from the original message and send the same thing back
 
 from telegram.ext import MessageHandler, Filters
@@ -393,7 +393,7 @@ def find_food(bot, update):
     words = update.message.text.split()
     for i in words:
         if i in food_list:
-            bot.send_message(chat_id = update.message.chat_id, text = &quot;FOOD!!&quot;)
+            bot.send_message(chat_id=update.message.chat_id, text=&quot;FOOD!!&quot;)
 </code></pre>
 
 <p>Next, let's write a MessageHandler that reverses the words in your message and echoes it back, with a ", haha &lt;person's name&gt;" at the back. So for example, if John writes "Colourless green ideas sleep furiously" in the chat, the bot should say "furiously sleep ideas green Colourless, haha John".</p>
@@ -404,7 +404,7 @@ def find_food(bot, update):
         output = &quot; &quot; + i + output
     output = output[1:]
     output = output + &quot;, haha &quot; + update.message.from_user.first_name
-    bot.send_message(chat_id = update.message.chat_id, text = output)
+    bot.send_message(chat_id=update.message.chat_id, text=output)
 </code></pre>
                 
                   
