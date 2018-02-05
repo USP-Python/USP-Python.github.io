@@ -1,4 +1,7 @@
 site_name: Intro to Python with Telgeram Bots
+site_url: https://usp-python.github.io/
+repo_url: https://github.com/USP-Python/USP-Python.github.io
+google_analytics: ['UA-113561366-1', 'usp-python.github.io']
 theme:
     name: 'material'
 markdown_extensions:
