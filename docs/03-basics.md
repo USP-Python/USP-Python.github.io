@@ -7,10 +7,10 @@ This is achieved using _control flow_ statements. There are 3 common control flo
 3. `while`
 
 ### The `if` Statement
-Simply put, `if` a certain condition is `true`, Python runs the block of statement in the `if`-block, _else_ it runs the statements in the `else`-block. The `else` clause is optional.
+Simply put, `if` a certain condition is `true`, Python runs the block of statement in the `if`-block, `else` it runs the statements in the `else`-block. The `else` clause is optional.
 
 ```python
-grade = input('Enter your grade: ')
+grade = int(input('Enter your grade: '))
 
 if grades >= 85:
     print('Great job!')
@@ -20,11 +20,11 @@ else:
     print('Hello! Wake up!')
 ```
 
-There is also the special operator "in" which we can use to check if an element is in a string, list, or dictionary. What does the following program print?
+There is also the special operator `in` which we can use to check if an element is in a string, list, or dictionary. What does the following program print?
 
 ```python
-lst = [1,2,3,4]
-dic = {1 : 2, 3 : 4}
+mylist = [1,2,3,4]
+mydict = {1 : 2, 3 : 4}
 if 2 not in lst:
     print("hi")
 elif 2 in dic:
@@ -36,7 +36,7 @@ else:
 ```
 
 ### The `for` Statement
-A 'for' loop allows the programmer to iterate over a sequence of objects.
+A `for` loop allows the programmer to iterate over a sequence of objects.
 
 ```python
 for i in range(1,5)
@@ -59,8 +59,8 @@ It can also be use to iterate through a list.
 ```python
 my_pets = ['lions', 'tigers', 'eagles', 'crocs']
 
-for pets in my_pets:
-    print(pets)
+for pet in my_pets:
+    print(pet)
 ```
 
 Output
@@ -75,9 +75,9 @@ crocs
 Let's now try writing a program to find the average of the values in a list.
 
 ```python
-lst = [1, 2, 3, 4]
+mylist = [1, 2, 3, 4]
 total = 0
-for x in lst:
+for x in mylist:
     total = total + x
 result = total / len(lst)
 print(result)

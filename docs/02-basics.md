@@ -1,3 +1,5 @@
+### List
+
 A data structure is something we use to store values. A list is an important in-built data structure in python, which we represent using square brackets:
 
 ```python
@@ -12,6 +14,8 @@ number = my_list[3]    # number == 4
 length = len(my_list)  # length == 5
 new_list = my_list[2:4] # new_list = [3,4]
 ```
+
+### Dictionary
 
 Another useful data structure is called a dictionary.
 
